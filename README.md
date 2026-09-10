@@ -1,3 +1,6 @@
+# 🎬 7xmovies Database (AI Agent  Developer Guide)
+
+**Note: The database has been cleared and reset.**
 # 🎬 7xmovies Database (AI Agent & Developer Guide)
 
 A high-performance, partitioned static JSON database repository for movies, web series, metadata, and direct download links. 
