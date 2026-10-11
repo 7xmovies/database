@@ -123,7 +123,7 @@ async function scrapeCategory({
 
     if (source === 'rogmovies' || source === 'bollywood') {
         CATEGORY = 'bollywood';
-        defaultBaseUrl = 'https://n1.rogmovies.best';
+        defaultBaseUrl = 'https://rogmovies.one';
     } else if (source === 'xprimehub' || source === 'xprime') {
         CATEGORY = 'xprimehub';
         defaultBaseUrl = 'https://xprimehub.pics';
