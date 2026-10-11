@@ -377,5 +377,41 @@ When building an automated scraper or AI agent that appends data to this reposit
 
 ---
 
+## ⚡ GitHub Actions Automated Scraper Workflow
+
+This repository contains a dedicated GitHub Actions workflow (`.github/workflows/scraper.yml`) that can run the batch scraper directly on GitHub's cloud runners with full configuration controls and zero local setup required.
+
+### 🚀 How to Run via GitHub Web UI
+
+1. Open this repository on GitHub (`https://github.com/7xmovies/database`).
+2. Click on the **Actions** tab at the top.
+3. In the left sidebar, click **"Batch Movie Scraper & Database Sync"**.
+4. Click the **"Run workflow"** button on the right.
+5. Configure your desired options:
+
+| Option | Type | Default | Description |
+|---|---|---|---|
+| **Category / Source** | Dropdown | `all` | Choose `all` (crawls all 3 categories sequentially), or select specific: `vegamovies` (Hollywood), `rogmovies` (Bollywood), `xprimehub` (18+). |
+| **Scraping Mode** | Dropdown | `auto` | `auto` resumes incrementally from `scraper-history.json`. `custom` lets you specify an exact start/end page. |
+| **Start Page** | Text | `(empty)` | Custom mode start page. Leave blank to auto-resume from history. |
+| **End Page** | Text | `(empty)` | Custom mode end page. Leave blank to use Page Count. |
+| **Page Count** | Text | `10` | Number of pages to scrape in `auto` mode per category. |
+| **Concurrency** | Dropdown | `5` | Parallel workers (`3`, `5`, `8`, `10`). |
+| **Request Delay** | Text | `400` | Polite millisecond delay between movie detail scrapes. |
+| **Custom Domains** | Text | `(empty)` | Optional domain overrides if upstream domains change. |
+| **Commit Changes** | Checkbox | `true` | Automatically commits updated chunks & indexes back to `main`. |
+| **Commit Message** | Text | `🤖 Auto-update movie database via GitHub Actions` | Custom Git commit message. |
+| **Dry Run** | Checkbox | `false` | Tests the scraper without writing or committing files. |
+
+### ⏰ Automated Scheduled Runs
+The workflow includes an automatic daily cron trigger:
+```yaml
+schedule:
+  - cron: '0 2 * * *' # Runs daily at 02:00 UTC
+```
+This keeps your index and chunk files constantly refreshed with the newest movie releases without requiring any manual clicks!
+
+---
+
 ## 📄 License & Disclaimer
 This database and documentation are provided for educational, research, and indexing demonstration purposes. The repository contains metadata references and does not host copyrighted media files.
