@@ -214,17 +214,9 @@ async function updateHomepageJson(source, baseUrl, dataDir) {
         });
 
         if (homepagePosts.length > 0) {
-            const filesToSave = [
-                `${source}-homepage.json`,
-                `${source}homepage.json`,
-                `${category}-homepage.json`,
-                `${category}homepage.json`
-            ];
-
-            for (const fn of new Set(filesToSave)) {
-                fs.writeFileSync(path.join(dataDir, fn), JSON.stringify(homepagePosts, null, 2));
-            }
-            console.log(`✅ Successfully updated ${source}homepage.json with ${homepagePosts.length} latest posts!`);
+            const fileName = `${source}homepage.json`;
+            fs.writeFileSync(path.join(dataDir, fileName), JSON.stringify(homepagePosts, null, 2));
+            console.log(`✅ Successfully updated ${fileName} with ${homepagePosts.length} latest posts!`);
         }
     } catch (err) {
         console.warn(`⚠️ Warning: Could not update ${source}homepage.json:`, err.message);
