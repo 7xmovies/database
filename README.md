@@ -69,10 +69,13 @@ This database uses a **Two-Tier Partitioned Architecture**:
 
 ```
 7xmovies/database/
-├── README.md                 # This documentation for AI agents and developers
-├── hollywood-index.json      # Hollywood / Dual Audio search index
-├── bollywood-index.json      # Bollywood search index
-├── xprimehub-index.json      # Adult / X-Prime search index
+├── README.md                 # Documentation for AI agents and developers
+├── vegamovieshomepage.json   # Latest homepage posts for VegaMovies (Hollywood)
+├── rogmovieshomepage.json    # Latest homepage posts for RogMovies (Bollywood)
+├── xprimehubhomepage.json    # Latest homepage posts for XPrimeHub (18+ Adult)
+├── hollywood-index.json      # Master Hollywood search index
+├── bollywood-index.json      # Master Bollywood search index
+├── xprimehub-index.json      # Master X-Prime search index
 ├── scraper-history.json      # Progress pointer tracking last page scraped
 ├── hollywood/
 │   ├── chunk-1.json          # Movies 1 - 100
@@ -180,6 +183,31 @@ Tracks the latest page scraped per source to enable incremental scraping:
   "xprimehub": 4
 }
 ```
+
+---
+
+### 4. Homepage Feed Schema (`{source-slug}homepage.json`)
+Auto-updated snapshot of the latest 20 releases directly from the source's homepage. Used to render instant homepages without calling live websites:
+
+```json
+[
+  {
+    "id": "download-love-of-your-life-2026-hindi-dubbed",
+    "title": "Download Love of Your Life (2026) Dual Audio {Hindi-English} 480p | 720p | 1080p",
+    "poster": "https://image.tmdb.org/t/p/w500/dL3Tcv4FU2K85bgnGRBgLjFSrLr.jpg",
+    "sourceUrl": "https://vegamovies.gallery/download-love-of-your-life-2026/",
+    "chunk": 113,
+    "year": "2026",
+    "quality": "1080p",
+    "updatedAt": "2026-10-14T18:00:15.799Z"
+  }
+]
+```
+
+Available files:
+- `vegamovieshomepage.json` (and `vegamovies-homepage.json`)
+- `rogmovieshomepage.json` (and `rogmovies-homepage.json`)
+- `xprimehubhomepage.json` (and `xprimehub-homepage.json`)
 
 ---
 

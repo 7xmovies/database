@@ -13,6 +13,7 @@ on:
           - 'vegamovies'
           - 'rogmovies'
           - 'xprimehub'
+          - 'homepage'
       mode:
         description: 'Scraping mode'
         required: true
@@ -165,7 +166,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Add modified database files
-          git add *-index.json scraper-history.json hollywood/ bollywood/ xprimehub/
+          git add *-index.json *homepage.json *-homepage.json scraper-history.json hollywood/ bollywood/ xprimehub/
 
           if git diff --staged --quiet; then
             echo "ℹ️ No changes detected. Database is already up to date."

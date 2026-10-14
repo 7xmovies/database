@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "scrape": "node scripts/bulk-scraper.js",
-    "history": "node scripts/bulk-scraper.js history"
+    "history": "node scripts/bulk-scraper.js history",
+    "homepage": "node scripts/bulk-scraper.js homepage"
   },
   "dependencies": {
     "axios": "^1.7.9",

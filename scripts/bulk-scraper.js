@@ -143,6 +143,95 @@ function extractCleanPoster(imgEl) {
 }
 
 /**
+ * Scrapes the latest posts from page 1 and auto-updates the {source-slug}homepage.json file
+ */
+async function updateHomepageJson(source, baseUrl, dataDir) {
+    let category = 'hollywood';
+    if (source === 'rogmovies' || source === 'bollywood') category = 'bollywood';
+    else if (source === 'xprimehub' || source === 'xprime') category = 'xprimehub';
+
+    const cleanBase = baseUrl.replace(/\/+$/, '');
+    console.log(`\n🏠 Auto-updating ${source}homepage.json from ${cleanBase}...`);
+
+    try {
+        const response = await axios.get(cleanBase, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+            },
+            timeout: 15000,
+            maxRedirects: 5
+        });
+
+        const $ = cheerio.load(response.data);
+        const indexPath = path.join(dataDir, `${category}-index.json`);
+        let indexMap = new Map();
+        if (fs.existsSync(indexPath)) {
+            try {
+                const idx = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+                idx.forEach(m => indexMap.set(m.id, m));
+            } catch {}
+        }
+
+        const homepagePosts = [];
+        $('article, .post-item, .poster-card, .post, [class*="poster-card"]').each((_, el) => {
+            let link = $(el).find('h2 a, h3 a, a').attr('href') || 
+                       $(el).find('meta[itemprop="url"]').attr('content') ||
+                       $(el).closest('a').attr('href') || 
+                       $(el).parent('a').attr('href');
+            let title = $(el).find('h2 a, h3 a, h2, h3, .post-title, .poster-title, .title').first().text().trim() ||
+                        $(el).find('img').attr('alt')?.trim();
+            let poster = extractCleanPoster($(el).find('img'));
+
+            if (title && link) {
+                const id = generateIdFromUrl(link);
+                const matched = indexMap.get(id);
+
+                const yMatch = title.match(/\b(19\d{2}|20\d{2})\b/);
+                const year = matched?.year || (yMatch ? yMatch[1] : undefined);
+
+                let quality = matched?.quality;
+                if (!quality) {
+                    if (/\b(?:2160p|4k)\b/i.test(title)) quality = '4K UHD';
+                    else if (/\b1080p\b/i.test(title)) quality = '1080p';
+                    else if (/\b720p\b/i.test(title)) quality = '720p';
+                    else if (/\b480p\b/i.test(title)) quality = '480p';
+                }
+
+                homepagePosts.push({
+                    id,
+                    title,
+                    poster: poster || matched?.poster || '',
+                    sourceUrl: link,
+                    chunk: matched?.chunk || null,
+                    ...(year && { year }),
+                    ...(quality && { quality }),
+                    ...(matched?.season && { season: matched.season }),
+                    ...(matched?.isSeries && { isSeries: true }),
+                    updatedAt: new Date().toISOString()
+                });
+            }
+        });
+
+        if (homepagePosts.length > 0) {
+            const filesToSave = [
+                `${source}-homepage.json`,
+                `${source}homepage.json`,
+                `${category}-homepage.json`,
+                `${category}homepage.json`
+            ];
+
+            for (const fn of new Set(filesToSave)) {
+                fs.writeFileSync(path.join(dataDir, fn), JSON.stringify(homepagePosts, null, 2));
+            }
+            console.log(`✅ Successfully updated ${source}homepage.json with ${homepagePosts.length} latest posts!`);
+        }
+    } catch (err) {
+        console.warn(`⚠️ Warning: Could not update ${source}homepage.json:`, err.message);
+    }
+}
+
+/**
  * Scrape a specific category
  */
 async function scrapeCategory({
@@ -322,6 +411,11 @@ async function scrapeCategory({
     if (dryRun) console.log(`🔍 Dry Run Mode:    ENABLED (No files will be written)`);
     console.log(`=================================================================\n`);
 
+    // Auto-update {source}homepage.json with the latest homepage posts
+    if (!dryRun) {
+        await updateHomepageJson(source, BASE_URL, DATA_DIR);
+    }
+
     let indexData = readIndex();
     const existingIds = new Set(indexData.map(m => m.id));
     let totalAdded = 0;
@@ -467,6 +561,21 @@ async function main() {
     const concurrency = namedArgs['concurrency'] || positionalArgs[3] || process.env.CONCURRENCY || '5';
     const requestDelay = namedArgs['delay'] || process.env.REQUEST_DELAY || '400';
     const dryRun = Boolean(namedArgs['dry-run'] || process.env.DRY_RUN === 'true');
+
+    // Standalone homepage refresh mode
+    if (sourceParam === 'homepage' || namedArgs['homepage-only']) {
+        console.log("🏠 Refreshing homepage JSON files for all sources...\n");
+        const defaultSources = [
+            { source: 'vegamovies', url: process.env.VEGAMOVIES_DOMAIN || 'https://vegamovies.gallery' },
+            { source: 'rogmovies', url: process.env.ROGMOVIES_DOMAIN || 'https://rogmovies.one' },
+            { source: 'xprimehub', url: process.env.XPRIME_DOMAIN || 'https://xprimehub.pics' }
+        ];
+        for (const s of defaultSources) {
+            await updateHomepageJson(s.source, s.url, DATA_DIR);
+        }
+        console.log("\n✨ All homepage JSON files updated successfully!");
+        return;
+    }
 
     if (sourceParam === 'all') {
         console.log("🚀 Starting Bulk Scraper across ALL sources (Hollywood -> Bollywood -> XPrimeHub)...\n");
