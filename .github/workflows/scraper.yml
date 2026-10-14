@@ -165,8 +165,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Add modified database files
-          git add *-index.json *homepage.json *-homepage.json scraper-history.json hollywood/ bollywood/ xprimehub/
+          # Stage all modified and new database chunks, indexes, homepage feeds, and history
+          git add -A
 
           if git diff --staged --quiet; then
             echo "ℹ️ No changes detected. Database is already up to date."
