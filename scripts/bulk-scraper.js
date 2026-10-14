@@ -106,6 +106,43 @@ function generateIdFromUrl(url) {
 }
 
 /**
+ * Bulletproof poster extractor that ignores lazy-loading base64/SVG placeholders
+ * and retrieves real high-res images from data-src, srcset, or direct URLs.
+ */
+function extractCleanPoster(imgEl) {
+    if (!imgEl || imgEl.length === 0) return '';
+    const candidates = [
+        imgEl.attr('data-src'),
+        imgEl.attr('data-lazy-src'),
+        imgEl.attr('data-original'),
+        imgEl.attr('data-cfsrc'),
+        imgEl.attr('data-fallback-src'),
+        imgEl.attr('src')
+    ];
+    const srcset = imgEl.attr('data-srcset') || imgEl.attr('srcset');
+    if (srcset) {
+        const firstSrc = srcset.split(',')[0]?.trim().split(' ')[0]?.trim();
+        if (firstSrc) candidates.push(firstSrc);
+    }
+    for (const c of candidates) {
+        if (c && typeof c === 'string') {
+            const trimmed = c.trim();
+            // Discard base64 placeholders, SVGs, and transparent spacer GIFs
+            if (trimmed.startsWith('data:') || trimmed.includes(';base64,') || trimmed.includes('.svg') || trimmed.includes('blank.gif')) {
+                continue;
+            }
+            if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
+                return trimmed;
+            }
+            if (trimmed.startsWith('//')) {
+                return 'https:' + trimmed;
+            }
+        }
+    }
+    return '';
+}
+
+/**
  * Scrape a specific category
  */
 async function scrapeCategory({
@@ -256,8 +293,19 @@ async function scrapeCategory({
             }
         });
 
+        let pagePoster = $('meta[property="og:image"]').attr('content') ||
+                         $('meta[name="twitter:image"]').attr('content') ||
+                         extractCleanPoster($('img.wp-post-image')) ||
+                         extractCleanPoster($('.entry-content img').first()) ||
+                         extractCleanPoster($('article img').first());
+
+        if (pagePoster && (pagePoster.startsWith('data:') || pagePoster.includes(';base64,') || pagePoster.includes('.svg') || !pagePoster.startsWith('http'))) {
+            pagePoster = '';
+        }
+
         return {
             fullTitle,
+            poster: pagePoster,
             categories,
             postMeta,
             downloadLinks
@@ -308,8 +356,7 @@ async function scrapeCategory({
                 let title = $(el).find('h2 a, h3 a, h2, h3, .post-title, .poster-title, .title').first().text().trim();
                 if (!title) title = $(el).find('img').attr('alt')?.trim();
                 
-                let poster = $(el).find('img').attr('src');
-                if (!poster) poster = $(el).find('img').attr('data-src');
+                let poster = extractCleanPoster($(el).find('img'));
 
                 if (title && link) {
                     moviesOnPage.push({ title, link, poster });
@@ -347,10 +394,18 @@ async function scrapeCategory({
                             const details = await scrapeMoviePage(movie.link);
                             const targetChunk = getTargetChunkFile(indexData);
 
+                            // Prioritize high-resolution inner page poster or verified listing poster
+                            let finalPoster = '';
+                            if (details.poster && details.poster.startsWith('http') && !details.poster.startsWith('data:')) {
+                                finalPoster = details.poster;
+                            } else if (movie.poster && movie.poster.startsWith('http') && !movie.poster.startsWith('data:')) {
+                                finalPoster = movie.poster;
+                            }
+
                             const indexEntry = {
                                 id,
                                 title: movie.title,
-                                poster: movie.poster,
+                                poster: finalPoster,
                                 chunk: targetChunk
                             };
                             if (details.postMeta?.primaryQuality) indexEntry.quality = details.postMeta.primaryQuality;
@@ -362,7 +417,7 @@ async function scrapeCategory({
                                 id,
                                 fullTitle: details.fullTitle,
                                 cleanTitle: movie.title,
-                                poster: movie.poster,
+                                poster: finalPoster,
                                 sourceUrl: movie.link,
                                 ...(details.postMeta?.isSeries && { isSeries: true }),
                                 ...(details.postMeta?.season && { season: details.postMeta.season }),
