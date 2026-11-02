@@ -91,7 +91,7 @@
         "server": "Direct"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.975Z"
+    "updatedAt": "2026-11-02T09:45:20.632Z"
   },
   {
     "id": "download-aankh-micholi-2023-hindi-full-movie-480p-720p-1080p",
@@ -151,7 +151,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.976Z"
+    "updatedAt": "2026-11-02T09:45:20.633Z"
   },
   {
     "id": "download-mirzapur-the-movie-2026-hindi-full-movie-480p-720p-1080p-web-dl",
@@ -266,7 +266,78 @@
         "server": "Direct"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.976Z"
+    "updatedAt": "2026-11-02T09:45:20.635Z"
+  },
+  {
+    "id": "download-rise-and-fall-season-2-hindi",
+    "title": "Download Rise and Fall (Season 2) Hindi TV-Show 480p 720p & 1080p WEB-DL x264 – (Episode 1 – 37 Added)",
+    "poster": "https://image.tmdb.org/t/p/w500/nKBHSZpzeHIFZ6Qab6tA7oFT12J.jpg",
+    "sourceUrl": "https://rogmovies.im/download-rise-and-fall-season-2-hindi/",
+    "chunk": 1,
+    "quality": "1080p",
+    "season": 2,
+    "isSeries": true,
+    "tmdbId": 300081,
+    "imdbId": "tt35674433",
+    "mediaType": "tv",
+    "downloadLinks": [
+      {
+        "label": "Season 2 (Episode 1 – 37 Added) 480p WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776510671/",
+        "quality": "480p x264 WEB-DL",
+        "season": 2,
+        "episode": 1,
+        "isBatch": false,
+        "size": "400MB/E",
+        "audio": "HiNDi-Series",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 2 (Episode 1 – 37 Added) 480p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776510672/",
+        "quality": "480p x264 WEB-DL",
+        "season": 2,
+        "episode": 1,
+        "isBatch": false,
+        "size": "400MB/E",
+        "audio": "HiNDi-Series",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 2 (Episode 1 – 37 Added) 720p WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776510688/",
+        "quality": "720p x264 WEB-DL",
+        "season": 2,
+        "episode": 1,
+        "isBatch": false,
+        "size": "1GB/E",
+        "audio": "HiNDi-Series",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 2 (Episode 1 – 37 Added) 720p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776510689/",
+        "quality": "720p x264 WEB-DL",
+        "season": 2,
+        "episode": 1,
+        "isBatch": false,
+        "size": "1GB/E",
+        "audio": "HiNDi-Series",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 2 (Episode 1 – 37 Added) 1080p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776510693/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 2,
+        "episode": 1,
+        "isBatch": false,
+        "size": "2GB/E",
+        "audio": "HiNDi-Series",
+        "server": "V-Cloud"
+      }
+    ],
+    "updatedAt": "2026-11-02T09:45:20.636Z"
   },
   {
     "id": "download-kappi-squad-season-1-hindi-malayalam-series-480p-720p-1080p-web-dl",
@@ -348,7 +419,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.976Z"
+    "updatedAt": "2026-11-02T09:45:20.637Z"
   },
   {
     "id": "download-family-full-house-with-rohit-sharma-season-01-hindi-tv-show-1080p-720p-web-dl",
@@ -420,7 +491,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.977Z"
+    "updatedAt": "2026-11-02T09:45:20.638Z"
   },
   {
     "id": "download-dhammal-with-pati-patni-aur-panga-season-2-hindi-tv-show-1080p-720p-web-dl",
@@ -491,7 +562,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.977Z"
+    "updatedAt": "2026-11-02T09:45:20.640Z"
   },
   {
     "id": "download-india-ke-top-1-season-01-hindi-tv-show-1080p-720p-web-dl",
@@ -562,78 +633,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.977Z"
-  },
-  {
-    "id": "download-rise-and-fall-season-2-hindi",
-    "title": "Download Rise and Fall (Season 2) Hindi TV-Show 480p 720p & 1080p WEB-DL x264 – (Episode 1 – 37 Added)",
-    "poster": "https://image.tmdb.org/t/p/w500/nKBHSZpzeHIFZ6Qab6tA7oFT12J.jpg",
-    "sourceUrl": "https://rogmovies.im/download-rise-and-fall-season-2-hindi/",
-    "chunk": 1,
-    "quality": "1080p",
-    "season": 2,
-    "isSeries": true,
-    "tmdbId": 300081,
-    "imdbId": "tt35674433",
-    "mediaType": "tv",
-    "downloadLinks": [
-      {
-        "label": "Season 2 (Episode 1 – 37 Added) 480p WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776510671/",
-        "quality": "480p x264 WEB-DL",
-        "season": 2,
-        "episode": 1,
-        "isBatch": false,
-        "size": "400MB/E",
-        "audio": "HiNDi-Series",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 2 (Episode 1 – 37 Added) 480p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776510672/",
-        "quality": "480p x264 WEB-DL",
-        "season": 2,
-        "episode": 1,
-        "isBatch": false,
-        "size": "400MB/E",
-        "audio": "HiNDi-Series",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 2 (Episode 1 – 37 Added) 720p WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776510688/",
-        "quality": "720p x264 WEB-DL",
-        "season": 2,
-        "episode": 1,
-        "isBatch": false,
-        "size": "1GB/E",
-        "audio": "HiNDi-Series",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 2 (Episode 1 – 37 Added) 720p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776510689/",
-        "quality": "720p x264 WEB-DL",
-        "season": 2,
-        "episode": 1,
-        "isBatch": false,
-        "size": "1GB/E",
-        "audio": "HiNDi-Series",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 2 (Episode 1 – 37 Added) 1080p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776510693/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 2,
-        "episode": 1,
-        "isBatch": false,
-        "size": "2GB/E",
-        "audio": "HiNDi-Series",
-        "server": "V-Cloud"
-      }
-    ],
-    "updatedAt": "2026-11-02T08:53:04.977Z"
+    "updatedAt": "2026-11-02T09:45:20.641Z"
   },
   {
     "id": "download-sa-re-ga-ma-pa-2026-season-1-hindi-tv-show-1080p-720p-web-dl",
@@ -682,7 +682,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.978Z"
+    "updatedAt": "2026-11-02T09:45:20.642Z"
   },
   {
     "id": "download-mtv-roadies-season-21-hindi-tv-show-1080p-720p-web-dl",
@@ -732,7 +732,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.978Z"
+    "updatedAt": "2026-11-02T09:45:20.644Z"
   },
   {
     "id": "download-the-court-season-1-hindi-tamil-series-480p-720p-1080p-web-dl",
@@ -793,7 +793,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.978Z"
+    "updatedAt": "2026-11-02T09:45:20.645Z"
   },
   {
     "id": "download-part-timers-season-1-hindi-telugu-jiohotstar-complete-web-series-480p-720p-1080p-web-dl-e01-to-e20-added",
@@ -1096,7 +1096,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.979Z"
+    "updatedAt": "2026-11-02T09:45:20.646Z"
   },
   {
     "id": "download-prince-of-mollywood-season-1-hindi-jiohotstar-complete-series-480p-720p-1080p",
@@ -1212,7 +1212,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.979Z"
+    "updatedAt": "2026-11-02T09:45:20.647Z"
   },
   {
     "id": "download-jhaad-phoonk-2026-hindi-full-movie-480p-720p-1080p",
@@ -1260,7 +1260,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.979Z"
+    "updatedAt": "2026-11-02T09:45:20.649Z"
   },
   {
     "id": "download-prasanna-vadanam-2024-hindi-org-dubbed-web-dl-480p-720p-1080p",
@@ -1309,7 +1309,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.979Z"
+    "updatedAt": "2026-11-02T09:45:20.650Z"
   },
   {
     "id": "download-cold-call-2026-hindi-org-dubbed-web-dl-480p-720p-1080p",
@@ -1357,7 +1357,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.980Z"
+    "updatedAt": "2026-11-02T09:45:20.652Z"
   },
   {
     "id": "download-the-great-indian-kapil-show-season-5-hindi-tv-show-1080p-720p-web-dl",
@@ -1407,7 +1407,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.980Z"
+    "updatedAt": "2026-11-02T09:45:20.653Z"
   },
   {
     "id": "download-bol-bhavein-na-bol-2026-punjabi-full-movie-480p-720p-1080p-web-dl",
@@ -1455,7 +1455,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.980Z"
+    "updatedAt": "2026-11-02T09:45:20.654Z"
   },
   {
     "id": "download-bicharo-bachelor-2026-gujarati-full-movie-480p-720p-1080p-web-dl",
@@ -1503,7 +1503,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.981Z"
+    "updatedAt": "2026-11-02T09:45:20.656Z"
   },
   {
     "id": "download-love-always-season-1-hindi-tamil-series-480p-720p-1080p-web-dl",
@@ -1618,7 +1618,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.981Z"
+    "updatedAt": "2026-11-02T09:45:20.657Z"
   },
   {
     "id": "download-nakhrewaalii-2026-hindi-full-movie-480p-720p-1080p",
@@ -1666,6 +1666,6 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T08:53:04.981Z"
+    "updatedAt": "2026-11-02T09:45:20.658Z"
   }
 ]
