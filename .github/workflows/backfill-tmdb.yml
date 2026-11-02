@@ -35,6 +35,9 @@ concurrency:
   group: scraper-sync
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   backfill:
     name: Backfill TMDB Metadata
@@ -45,8 +48,8 @@ jobs:
       - name: Checkout Database Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
-          token: ${{ secrets.GITHUB_TOKEN || github.token }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js Runtime
         uses: actions/setup-node@v4
@@ -81,6 +84,7 @@ jobs:
             echo "ℹ️ No changes detected. All selected movies already have TMDB IDs."
           else
             git commit -m "🤖 Backfill TMDB IDs for ${{ github.event.inputs.category }} movies"
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git pull --rebase origin main || true
             git push origin main
             echo "✅ Successfully committed and pushed backfilled TMDB records!"

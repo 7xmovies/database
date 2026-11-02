@@ -176,6 +176,7 @@ jobs:
             git commit -m "${COMMIT_MSG}"
             
             # Pull latest changes if any to prevent reject
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git pull --rebase origin main || true
             git push origin main
             echo "✅ Successfully committed and pushed updates to main branch!"
