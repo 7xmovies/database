@@ -114,7 +114,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.607Z"
+    "updatedAt": "2026-11-02T13:42:49.815Z"
   },
   {
     "id": "download-visionquest-2026-season-1-hindi-dubbed-org",
@@ -207,7 +207,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.609Z"
+    "updatedAt": "2026-11-02T13:42:49.817Z"
   },
   {
     "id": "download-masterplan-2026-hindi-dubbed-org-english-480p-720p-1080p-web-dl",
@@ -278,7 +278,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.614Z"
+    "updatedAt": "2026-11-02T13:42:49.819Z"
   },
   {
     "id": "download-spider-man-brand-new-day-2026-hindi-dubbed-full-movie-480p-720p-1080p-2160p-web-dl",
@@ -470,7 +470,7 @@
         "server": "Direct"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.615Z"
+    "updatedAt": "2026-11-02T13:42:49.821Z"
   },
   {
     "id": "download-insidious-out-of-the-further-2026-hindi-dubbed-full-movie-480p-720p-1080p-web-dl",
@@ -563,7 +563,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.617Z"
+    "updatedAt": "2026-11-02T13:42:49.822Z"
   },
   {
     "id": "download-lanterns-2026-season-1",
@@ -713,7 +713,305 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.618Z"
+    "updatedAt": "2026-11-02T13:42:49.824Z"
+  },
+  {
+    "id": "download-neagley-2026-season-1-hindi-dubbed-480p-720p-1080p-web-dl",
+    "title": "Download Neagley (2026) Season 1 Prime Video : Dual Audio {Hindi-English} WEB-Series 480p 720p & 1080p WEB-DL x264",
+    "poster": "https://image.tmdb.org/t/p/w500/lKOPmO0ah17ogQ9hWg7lSd40kIr.jpg",
+    "sourceUrl": "https://new1.vegamovies.lease/download-neagley-2026-season-1-hindi-dubbed-480p-720p-1080p-web-dl/",
+    "chunk": 3,
+    "year": "2026",
+    "quality": "1080p",
+    "season": 1,
+    "isSeries": true,
+    "tmdbId": 273207,
+    "imdbId": "tt33539520",
+    "mediaType": "tv",
+    "rating": 8,
+    "downloadLinks": [
+      {
+        "label": "Season 1 480p WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776508449/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "180MB/E",
+        "audio": "Hindi-English",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 1 480p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776508450/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "180MB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 1 480p WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508451/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "180MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 720p WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776508441/",
+        "quality": "720p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "380MB/E",
+        "audio": "Hindi-English",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 1 720p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776508442/",
+        "quality": "720p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "380MB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 1 720p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
+        "url": "https://nexdrive.beer/genxfm784776508443/",
+        "quality": "720p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "380MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 720p WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508444/",
+        "quality": "720p x264 WEB-DL",
+        "season": 1,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "380MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 1080p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
+        "url": "https://nexdrive.beer/genxfm784776508457/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "1.4GB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 1080p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776508458/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "1.4GB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 1 1080p WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508459/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 1,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "1.4GB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      }
+    ],
+    "updatedAt": "2026-11-02T13:42:49.833Z"
+  },
+  {
+    "id": "download-reacher-2026-season-4-prime-video",
+    "title": "Download Reacher {S04E08 Added} Prime Video : Dual Audio {Hindi-English} Web Series 480p 720p | 1080p & 2160p 4K WEB-DL",
+    "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "sourceUrl": "https://new1.vegamovies.lease/download-reacher-2026-season-4-prime-video/",
+    "chunk": 3,
+    "quality": "4K UHD",
+    "isSeries": true,
+    "tmdbId": 108978,
+    "imdbId": "tt9288030",
+    "mediaType": "tv",
+    "rating": 8.1,
+    "downloadLinks": [
+      {
+        "label": "Season 4 (Episode.01-8 Added) 480p AMZN WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776501835/",
+        "quality": "480p x264 WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "140MB/E",
+        "audio": "Hindi-English",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 480p AMZN WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776501835/",
+        "quality": "480p x264 WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "140MB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 480p AMZN WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508415/",
+        "quality": "480p x264 WEB-DL",
+        "season": 4,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "140MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 720p 10Bit AMZN WEB-DL HEVC x265 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776501830/",
+        "quality": "720p 10Bit HEVC WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "310MB/E",
+        "audio": "Hindi-English",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 720p 10Bit AMZN WEB-DL HEVC x265 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776501831/",
+        "quality": "720p 10Bit HEVC WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "310MB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 720p 10Bit AMZN WEB-DL HEVC x265 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508427/",
+        "quality": "720p 10Bit HEVC WEB-DL",
+        "season": 4,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "310MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 720p AMZN WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776501821/",
+        "quality": "720p x264 WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "500MB/E",
+        "audio": "Hindi-English",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 720p AMZN WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776501822/",
+        "quality": "720p x264 WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "500MB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 720p AMZN WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508418/",
+        "quality": "720p x264 WEB-DL",
+        "season": 4,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "500MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 1080p AMZN WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776501827/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "1.3GB/E",
+        "audio": "Hindi-English",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 1080p AMZN WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776501826/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "1.3GB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 1080p AMZN WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508434/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 4,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "1.3GB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 2160p AMZN WEB-DL SDR HEVC - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776501818/",
+        "quality": "4K UHD HEVC WEB-DL",
+        "season": 4,
+        "episode": 1,
+        "isBatch": false,
+        "size": "5GB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 4 (Episode.01-8 Added) 2160p AMZN WEB-DL SDR HEVC - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776507877/",
+        "quality": "4K UHD HEVC WEB-DL",
+        "season": 4,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "5GB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      }
+    ],
+    "updatedAt": "2026-11-02T13:42:49.835Z"
   },
   {
     "id": "download-a-story-of-derry-2026-season-1",
@@ -775,7 +1073,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.625Z"
+    "updatedAt": "2026-11-02T13:42:49.838Z"
   },
   {
     "id": "download-dexter-resurrection-2026-season-2-hindi-dubbed-org",
@@ -857,7 +1155,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.626Z"
+    "updatedAt": "2026-11-02T13:42:49.840Z"
   },
   {
     "id": "download-apocalypse-z-new-world-2026-hindi-dubbed-org-480p-720p-1080p-2160p",
@@ -928,7 +1226,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.633Z"
+    "updatedAt": "2026-11-02T13:42:49.848Z"
   },
   {
     "id": "download-black-doves-2024-season-1-complete-hindi-english-netflix",
@@ -1034,7 +1332,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.635Z"
+    "updatedAt": "2026-11-02T13:42:49.850Z"
   },
   {
     "id": "download-the-crush-1993-hindi-dubbed-full-movie-480p-720p-1080p-blu-ray",
@@ -1083,140 +1381,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.637Z"
-  },
-  {
-    "id": "download-monster-the-lizzie-borden-story-2026-netflix",
-    "title": "Download NetFlix Monster: The Lizzie Borden Story (2026) Season 1 Dual Audio {Hindi-English} 480p 720p & 1080p x264 WEB-DL",
-    "poster": "https://image.tmdb.org/t/p/original/xfC8BSp1iE4Rfqhe4AysIsz0lLJ.jpg",
-    "sourceUrl": "https://new1.vegamovies.lease/download-monster-the-lizzie-borden-story-2026-netflix/",
-    "chunk": null,
-    "year": "2026",
-    "quality": "1080p",
-    "downloadLinks": [
-      {
-        "label": "Season 1 480p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
-        "url": "https://nexdrive.beer/genxfm784776508643/",
-        "quality": "480p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "170MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 480p WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776508633/",
-        "quality": "480p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "170MB/E",
-        "audio": "Hindi-English",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 1 480p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776508637/",
-        "quality": "480p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "170MB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 1 480p WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508634/",
-        "quality": "480p x264 WEB-DL",
-        "season": 1,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "170MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 720p WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776508617/",
-        "quality": "720p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "500MB/E",
-        "audio": "Hindi-English",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 1 720p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
-        "url": "https://nexdrive.beer/genxfm784776508608/",
-        "quality": "720p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "500MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 720p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776508609/",
-        "quality": "720p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "500MB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 1 720p WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508610/",
-        "quality": "720p x264 WEB-DL",
-        "season": 1,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "500MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 1080p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
-        "url": "https://nexdrive.beer/genxfm784776508619/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "1.2GB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 1080p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776508621/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "1.2GB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 1 1080p WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508622/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 1,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "1.2GB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      }
-    ],
-    "updatedAt": "2026-11-02T09:33:54.715Z"
+    "updatedAt": "2026-11-02T13:42:49.852Z"
   },
   {
     "id": "download-mushoku-tensei-jobless-reincarnation-anime-series",
@@ -1409,7 +1574,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.717Z"
+    "updatedAt": "2026-11-02T13:42:49.857Z"
   },
   {
     "id": "download-even-though-im-a-super-timid-noble-girl-i-accepted-the-bet-from-my-cunning-fiance-season-1-hindi-dubbed-series",
@@ -1470,7 +1635,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.719Z"
+    "updatedAt": "2026-11-02T13:42:49.859Z"
   },
   {
     "id": "download-as-a-reincarnated-aristocrat-season-1-3-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -1663,7 +1828,142 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.721Z"
+    "updatedAt": "2026-11-02T13:42:49.861Z"
+  },
+  {
+    "id": "download-monster-the-lizzie-borden-story-2026-netflix",
+    "title": "Download NetFlix Monster: The Lizzie Borden Story (2026) Season 1 Dual Audio {Hindi-English} 480p 720p & 1080p x264 WEB-DL",
+    "poster": "https://image.tmdb.org/t/p/original/xfC8BSp1iE4Rfqhe4AysIsz0lLJ.jpg",
+    "sourceUrl": "https://new1.vegamovies.lease/download-monster-the-lizzie-borden-story-2026-netflix/",
+    "chunk": 3,
+    "year": "2026",
+    "quality": "1080p",
+    "season": 1,
+    "isSeries": true,
+    "downloadLinks": [
+      {
+        "label": "Season 1 480p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
+        "url": "https://nexdrive.beer/genxfm784776508643/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "170MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 480p WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776508633/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "170MB/E",
+        "audio": "Hindi-English",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 1 480p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776508637/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "170MB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 1 480p WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508634/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "170MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 720p WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776508617/",
+        "quality": "720p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "500MB/E",
+        "audio": "Hindi-English",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 1 720p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
+        "url": "https://nexdrive.beer/genxfm784776508608/",
+        "quality": "720p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "500MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 720p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776508609/",
+        "quality": "720p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "500MB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 1 720p WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508610/",
+        "quality": "720p x264 WEB-DL",
+        "season": 1,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "500MB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 1080p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
+        "url": "https://nexdrive.beer/genxfm784776508619/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "1.2GB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Season 1 1080p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776508621/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 1,
+        "episode": null,
+        "isBatch": false,
+        "size": "1.2GB/E",
+        "audio": "Hindi-English",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 1 1080p WEB-DL x264 - ⚡ Batch/Zip",
+        "url": "https://nexdrive.beer/genxfm784776508622/",
+        "quality": "1080p x264 WEB-DL",
+        "season": 1,
+        "episode": "Batch/Zip",
+        "isBatch": true,
+        "size": "1.2GB/E",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      }
+    ],
+    "updatedAt": "2026-11-02T13:42:49.865Z"
   },
   {
     "id": "download-overgeared-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -1720,86 +2020,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.797Z"
-  },
-  {
-    "id": "download-a-love-other-than-yours-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
-    "title": "Download A Love Other Than Yours (Season 1) [S01E14 Added] {Hindi-English-Korean} K-Drama Series 480p 720p & 1080p WEB-DL",
-    "poster": "https://image.tmdb.org/t/p/original/iKgdhgBPi1cCRRqsUgaxUDRuFP6.jpg",
-    "sourceUrl": "https://new1.vegamovies.lease/download-a-love-other-than-yours-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl/",
-    "chunk": 1,
-    "quality": "1080p",
-    "season": 1,
-    "isSeries": true,
-    "downloadLinks": [
-      {
-        "label": "Season 1 (Episode.01-14 Added) 480p WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776507837/",
-        "quality": "480p x264 WEB-DL",
-        "season": 1,
-        "episode": 1,
-        "isBatch": false,
-        "size": "250MB/E",
-        "audio": "Hindi-English-Korean",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 1 (Episode.01-14 Added) 480p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776507838/",
-        "quality": "480p x264 WEB-DL",
-        "season": 1,
-        "episode": 1,
-        "isBatch": false,
-        "size": "250MB/E",
-        "audio": "Hindi-English-Korean",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 1 (Episode.01-14 Added) 720p WEB-DL HEVC x265 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776507846/",
-        "quality": "720p HEVC WEB-DL",
-        "season": 1,
-        "episode": 1,
-        "isBatch": false,
-        "size": "300MB/E",
-        "audio": "Hindi-English-Korean",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 1 (Episode.01-14 Added) 720p WEB-DL HEVC x265 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776507847/",
-        "quality": "720p HEVC WEB-DL",
-        "season": 1,
-        "episode": 1,
-        "isBatch": false,
-        "size": "300MB/E",
-        "audio": "Hindi-English-Korean",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 1 (Episode.01-14 Added) 1080p WEB-DL HEVC x265 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776507851/",
-        "quality": "1080p HEVC WEB-DL",
-        "season": 1,
-        "episode": 1,
-        "isBatch": false,
-        "size": "700MB/E",
-        "audio": "Hindi-English-Korean",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 1 (Episode.01-14 Added) 1080p WEB-DL HEVC x265 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776507852/",
-        "quality": "1080p HEVC WEB-DL",
-        "season": 1,
-        "episode": 1,
-        "isBatch": false,
-        "size": "700MB/E",
-        "audio": "Hindi-English-Korean",
-        "server": "V-Cloud"
-      }
-    ],
-    "updatedAt": "2026-11-02T09:33:54.843Z"
+    "updatedAt": "2026-11-02T13:42:49.941Z"
   },
   {
     "id": "download-final-table-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -1878,7 +2099,7 @@
         "server": "V-Cloud"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.891Z"
+    "updatedAt": "2026-11-02T13:42:49.951Z"
   },
   {
     "id": "download-bucky-larson-born-to-be-a-star-2011-hindi-org-english-480p-720p-1080p-bluray",
@@ -1927,7 +2148,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.892Z"
+    "updatedAt": "2026-11-02T13:42:49.954Z"
   },
   {
     "id": "download-ranma-season-1-3-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -2120,7 +2341,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.894Z"
+    "updatedAt": "2026-11-02T13:42:49.957Z"
   },
   {
     "id": "download-bull-run-2024-hindi-dubbed-org-english-480p-720p-1080p-web-dl",
@@ -2169,7 +2390,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.896Z"
+    "updatedAt": "2026-11-02T13:42:49.959Z"
   },
   {
     "id": "download-ghosts-of-war-2020-hindi-dubbed-org-english-480p-720p-1080p-bluray",
@@ -2218,7 +2439,168 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.898Z"
+    "updatedAt": "2026-11-02T13:42:49.962Z"
+  },
+  {
+    "id": "download-a-love-other-than-yours-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
+    "title": "Download A Love Other Than Yours (Season 1) [S01E14 Added] {Hindi-English-Korean} K-Drama Series 480p 720p & 1080p WEB-DL",
+    "poster": "https://image.tmdb.org/t/p/original/iKgdhgBPi1cCRRqsUgaxUDRuFP6.jpg",
+    "sourceUrl": "https://new1.vegamovies.lease/download-a-love-other-than-yours-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl/",
+    "chunk": 1,
+    "quality": "1080p",
+    "season": 1,
+    "isSeries": true,
+    "downloadLinks": [
+      {
+        "label": "Season 1 (Episode.01-14 Added) 480p WEB-DL x264 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776507837/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": 1,
+        "isBatch": false,
+        "size": "250MB/E",
+        "audio": "Hindi-English-Korean",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 1 (Episode.01-14 Added) 480p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776507838/",
+        "quality": "480p x264 WEB-DL",
+        "season": 1,
+        "episode": 1,
+        "isBatch": false,
+        "size": "250MB/E",
+        "audio": "Hindi-English-Korean",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 1 (Episode.01-14 Added) 720p WEB-DL HEVC x265 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776507846/",
+        "quality": "720p HEVC WEB-DL",
+        "season": 1,
+        "episode": 1,
+        "isBatch": false,
+        "size": "300MB/E",
+        "audio": "Hindi-English-Korean",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 1 (Episode.01-14 Added) 720p WEB-DL HEVC x265 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776507847/",
+        "quality": "720p HEVC WEB-DL",
+        "season": 1,
+        "episode": 1,
+        "isBatch": false,
+        "size": "300MB/E",
+        "audio": "Hindi-English-Korean",
+        "server": "V-Cloud"
+      },
+      {
+        "label": "Season 1 (Episode.01-14 Added) 1080p WEB-DL HEVC x265 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776507851/",
+        "quality": "1080p HEVC WEB-DL",
+        "season": 1,
+        "episode": 1,
+        "isBatch": false,
+        "size": "700MB/E",
+        "audio": "Hindi-English-Korean",
+        "server": "G-Direct"
+      },
+      {
+        "label": "Season 1 (Episode.01-14 Added) 1080p WEB-DL HEVC x265 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776507852/",
+        "quality": "1080p HEVC WEB-DL",
+        "season": 1,
+        "episode": 1,
+        "isBatch": false,
+        "size": "700MB/E",
+        "audio": "Hindi-English-Korean",
+        "server": "V-Cloud"
+      }
+    ],
+    "updatedAt": "2026-11-02T13:42:49.965Z"
+  },
+  {
+    "id": "download-resident-evil-2026-hindi-dubbed-org-english-480p-720p-1080p-web-dl-2160p",
+    "title": "Download Resident Evil (2026) PrimeVideo: Dual-Audio {Hindi-English} WEB-DL 480p [450MB] | 720p [920MB] | 1080p [1.9GB] & 2160p 4K SDR",
+    "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+    "sourceUrl": "https://new1.vegamovies.lease/download-resident-evil-2026-hindi-dubbed-org-english-480p-720p-1080p-web-dl-2160p/",
+    "chunk": null,
+    "year": "2026",
+    "quality": "4K UHD",
+    "tmdbId": 1423191,
+    "imdbId": "tt35538033",
+    "mediaType": "movie",
+    "rating": 7.3,
+    "downloadLinks": [
+      {
+        "label": "Resident Evil (2026) 480p AMZN WEB-DL DD2.0 AAC x264 - Download Now",
+        "url": "https://nexdrive.beer/genxfm784776518145/",
+        "quality": "480p x264 WEB-DL",
+        "season": null,
+        "episode": null,
+        "isBatch": false,
+        "size": "450MB",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Resident Evil (2026) 720p 10bit AMZN WEB-DL HEVC DD2.0 AAC x265 - Download Now",
+        "url": "https://nexdrive.beer/genxfm784776518143/",
+        "quality": "720p 10Bit HEVC WEB-DL",
+        "season": null,
+        "episode": null,
+        "isBatch": false,
+        "size": "630MB",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Resident Evil (2026) 720p AMZN WEB-DL DD5.1 x264 - Download Now",
+        "url": "https://nexdrive.beer/genxfm784776518147/",
+        "quality": "720p x264 WEB-DL",
+        "season": null,
+        "episode": null,
+        "isBatch": false,
+        "size": "920MB",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Resident Evil (2026) 1080p AMZN WEB-DL DD5.1 x264 - Download Now",
+        "url": "https://nexdrive.beer/genxfm784776518148/",
+        "quality": "1080p x264 WEB-DL",
+        "season": null,
+        "episode": null,
+        "isBatch": false,
+        "size": "1.9GB",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Resident Evil (2026) 1080p AMZN WEB-DL DDP5.1 H.265 - Download Now",
+        "url": "https://nexdrive.beer/genxfm784776518139/",
+        "quality": "1080p WEB-DL",
+        "season": null,
+        "episode": null,
+        "isBatch": false,
+        "size": "2.8GB",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      },
+      {
+        "label": "Resident Evil (2026) 1080p AMZN WEB-DL DDP5.1 H.264 - Download Now",
+        "url": "https://nexdrive.beer/genxfm784776518132/",
+        "quality": "1080p WEB-DL",
+        "season": null,
+        "episode": null,
+        "isBatch": false,
+        "size": "6.6GB",
+        "audio": "Hindi-English",
+        "server": "NexDrive"
+      }
+    ],
+    "updatedAt": "2026-11-02T13:42:49.973Z"
   },
   {
     "id": "download-obsession-2026-hindi-dubbed-org-dd5-1-480p-720p-1080p-2160p-4k-amazon-prime-jiohotstar",
@@ -2384,41 +2766,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.902Z"
-  },
-  {
-    "id": "download-doctor-x-age-of-the-white-mafia-2026-season-1",
-    "title": "Download Doctor X: Age of the White Mafia {S01E01-8 Added} Netflix : Dual-Audio (English-Korean) K-Drama TV Series 1080p HEVC WEB-DL x265",
-    "poster": "https://image.tmdb.org/t/p/original/nDDVzQfv95PGwj9nV2fJvUrkcvU.jpg",
-    "sourceUrl": "https://new1.vegamovies.lease/download-doctor-x-age-of-the-white-mafia-2026-season-1/",
-    "chunk": 1,
-    "quality": "1080p",
-    "isSeries": true,
-    "downloadLinks": [
-      {
-        "label": "Season 1 (Episode.01-8 Added) 1080p 10Bit HEVC WEB-DL x265 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776513634/",
-        "quality": "1080p 10Bit HEVC WEB-DL",
-        "season": 1,
-        "episode": 1,
-        "isBatch": false,
-        "size": "600MB/E",
-        "audio": "Korean-English",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 1 (Episode.01-8 Added) 1080p 10Bit HEVC WEB-DL x265 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776513635/",
-        "quality": "1080p 10Bit HEVC WEB-DL",
-        "season": 1,
-        "episode": 1,
-        "isBatch": false,
-        "size": "600MB/E",
-        "audio": "Korean-English",
-        "server": "V-Cloud"
-      }
-    ],
-    "updatedAt": "2026-11-02T09:33:54.905Z"
+    "updatedAt": "2026-11-02T13:42:49.989Z"
   },
   {
     "id": "download-wwe-friday-night-smackdown-30th-october-2026-hindi-english",
@@ -2485,7 +2833,7 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.944Z"
+    "updatedAt": "2026-11-02T13:42:49.991Z"
   },
   {
     "id": "download-mobland-season-1-2-hindi-dubbed-org",
@@ -2696,301 +3044,40 @@
         "server": "Direct"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:54.961Z"
+    "updatedAt": "2026-11-02T13:42:49.992Z"
   },
   {
-    "id": "download-neagley-2026-season-1-hindi-dubbed-480p-720p-1080p-web-dl",
-    "title": "Download Neagley (2026) Season 1 Prime Video : Dual Audio {Hindi-English} WEB-Series 480p 720p & 1080p WEB-DL x264",
-    "poster": "https://image.tmdb.org/t/p/w500/lKOPmO0ah17ogQ9hWg7lSd40kIr.jpg",
-    "sourceUrl": "https://new1.vegamovies.lease/download-neagley-2026-season-1-hindi-dubbed-480p-720p-1080p-web-dl/",
-    "chunk": null,
-    "year": "2026",
+    "id": "download-doctor-x-age-of-the-white-mafia-2026-season-1",
+    "title": "Download Doctor X: Age of the White Mafia {S01E01-8 Added} Netflix : Dual-Audio (English-Korean) K-Drama TV Series 1080p HEVC WEB-DL x265",
+    "poster": "https://image.tmdb.org/t/p/original/nDDVzQfv95PGwj9nV2fJvUrkcvU.jpg",
+    "sourceUrl": "https://new1.vegamovies.lease/download-doctor-x-age-of-the-white-mafia-2026-season-1/",
+    "chunk": 1,
     "quality": "1080p",
-    "tmdbId": 273207,
-    "imdbId": "tt33539520",
-    "mediaType": "tv",
-    "rating": 8,
+    "isSeries": true,
     "downloadLinks": [
       {
-        "label": "Season 1 480p WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776508449/",
-        "quality": "480p x264 WEB-DL",
+        "label": "Season 1 (Episode.01-8 Added) 1080p 10Bit HEVC WEB-DL x265 - ⚡ G-Direct [Instant]",
+        "url": "https://nexdrive.beer/genxfm784776513634/",
+        "quality": "1080p 10Bit HEVC WEB-DL",
         "season": 1,
-        "episode": null,
+        "episode": 1,
         "isBatch": false,
-        "size": "180MB/E",
-        "audio": "Hindi-English",
+        "size": "600MB/E",
+        "audio": "Korean-English",
         "server": "G-Direct"
       },
       {
-        "label": "Season 1 480p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776508450/",
-        "quality": "480p x264 WEB-DL",
+        "label": "Season 1 (Episode.01-8 Added) 1080p 10Bit HEVC WEB-DL x265 - ⚡ V-Cloud [Resumable]",
+        "url": "https://nexdrive.beer/genxfm784776513635/",
+        "quality": "1080p 10Bit HEVC WEB-DL",
         "season": 1,
-        "episode": null,
+        "episode": 1,
         "isBatch": false,
-        "size": "180MB/E",
-        "audio": "Hindi-English",
+        "size": "600MB/E",
+        "audio": "Korean-English",
         "server": "V-Cloud"
-      },
-      {
-        "label": "Season 1 480p WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508451/",
-        "quality": "480p x264 WEB-DL",
-        "season": 1,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "180MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 720p WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776508441/",
-        "quality": "720p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "380MB/E",
-        "audio": "Hindi-English",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 1 720p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776508442/",
-        "quality": "720p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "380MB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 1 720p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
-        "url": "https://nexdrive.beer/genxfm784776508443/",
-        "quality": "720p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "380MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 720p WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508444/",
-        "quality": "720p x264 WEB-DL",
-        "season": 1,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "380MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 1080p WEB-DL x264 - ⚡ V-Drive [ Multi ]",
-        "url": "https://nexdrive.beer/genxfm784776508457/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "1.4GB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 1 1080p WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776508458/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 1,
-        "episode": null,
-        "isBatch": false,
-        "size": "1.4GB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 1 1080p WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508459/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 1,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "1.4GB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T09:33:55.576Z"
-  },
-  {
-    "id": "download-reacher-2026-season-4-prime-video",
-    "title": "Download Reacher {S04E08 Added} Prime Video : Dual Audio {Hindi-English} Web Series 480p 720p | 1080p & 2160p 4K WEB-DL",
-    "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-    "sourceUrl": "https://new1.vegamovies.lease/download-reacher-2026-season-4-prime-video/",
-    "chunk": null,
-    "quality": "4K UHD",
-    "tmdbId": 108978,
-    "imdbId": "tt9288030",
-    "mediaType": "tv",
-    "rating": 8.1,
-    "downloadLinks": [
-      {
-        "label": "Season 4 (Episode.01-8 Added) 480p AMZN WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776501835/",
-        "quality": "480p x264 WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "140MB/E",
-        "audio": "Hindi-English",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 480p AMZN WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776501835/",
-        "quality": "480p x264 WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "140MB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 480p AMZN WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508415/",
-        "quality": "480p x264 WEB-DL",
-        "season": 4,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "140MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 720p 10Bit AMZN WEB-DL HEVC x265 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776501830/",
-        "quality": "720p 10Bit HEVC WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "310MB/E",
-        "audio": "Hindi-English",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 720p 10Bit AMZN WEB-DL HEVC x265 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776501831/",
-        "quality": "720p 10Bit HEVC WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "310MB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 720p 10Bit AMZN WEB-DL HEVC x265 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508427/",
-        "quality": "720p 10Bit HEVC WEB-DL",
-        "season": 4,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "310MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 720p AMZN WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776501821/",
-        "quality": "720p x264 WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "500MB/E",
-        "audio": "Hindi-English",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 720p AMZN WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776501822/",
-        "quality": "720p x264 WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "500MB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 720p AMZN WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508418/",
-        "quality": "720p x264 WEB-DL",
-        "season": 4,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "500MB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 1080p AMZN WEB-DL x264 - ⚡ G-Direct [Instant]",
-        "url": "https://nexdrive.beer/genxfm784776501827/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "1.3GB/E",
-        "audio": "Hindi-English",
-        "server": "G-Direct"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 1080p AMZN WEB-DL x264 - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776501826/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "1.3GB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 1080p AMZN WEB-DL x264 - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776508434/",
-        "quality": "1080p x264 WEB-DL",
-        "season": 4,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "1.3GB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 2160p AMZN WEB-DL SDR HEVC - ⚡ V-Cloud [Resumable]",
-        "url": "https://nexdrive.beer/genxfm784776501818/",
-        "quality": "4K UHD HEVC WEB-DL",
-        "season": 4,
-        "episode": 1,
-        "isBatch": false,
-        "size": "5GB/E",
-        "audio": "Hindi-English",
-        "server": "V-Cloud"
-      },
-      {
-        "label": "Season 4 (Episode.01-8 Added) 2160p AMZN WEB-DL SDR HEVC - ⚡ Batch/Zip",
-        "url": "https://nexdrive.beer/genxfm784776507877/",
-        "quality": "4K UHD HEVC WEB-DL",
-        "season": 4,
-        "episode": "Batch/Zip",
-        "isBatch": true,
-        "size": "5GB/E",
-        "audio": "Hindi-English",
-        "server": "NexDrive"
-      }
-    ],
-    "updatedAt": "2026-11-02T09:33:55.776Z"
+    "updatedAt": "2026-11-02T13:42:50.019Z"
   }
 ]
