@@ -136,6 +136,7 @@ jobs:
           VEGAMOVIES_DOMAIN: ${{ github.event.inputs.custom_vegamovies_domain || '' }}
           ROGMOVIES_DOMAIN: ${{ github.event.inputs.custom_rogmovies_domain || '' }}
           XPRIME_DOMAIN: ${{ github.event.inputs.custom_xprime_domain || '' }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || 'b18089699b30648f171528029de6292a' }}
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
           DATA_DIR: '.'
         run: |

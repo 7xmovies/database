@@ -36,7 +36,7 @@ A high-performance, two-tier partitioned JSON database and automated scraper pip
 ## 🏛️ Architecture & Data Tiers
 
 ### 1. Master Search Indexes (`*-index.json`)
-Lightweight index containing only the fields required for fast searching and chunk resolution (`id`, `title`, `poster`, `chunk`, `year`, `quality`):
+Lightweight index containing only the fields required for fast searching and chunk resolution (`id`, `title`, `poster`, `chunk`, `year`, `quality`, `tmdbId`, `rating`):
 ```json
 [
   {
@@ -45,7 +45,10 @@ Lightweight index containing only the fields required for fast searching and chu
     "poster": "https://image.tmdb.org/t/p/w500/example.jpg",
     "chunk": 1,
     "year": "2026",
-    "quality": "1080p"
+    "quality": "1080p",
+    "tmdbId": 969681,
+    "mediaType": "movie",
+    "rating": 8.5
   }
 ]
 ```
@@ -61,6 +64,10 @@ To avoid giant JSON files that cause latency and exceed memory/context limits, d
     "poster": "https://image.tmdb.org/t/p/w500/example.jpg",
     "sourceUrl": "https://vegamovies.gallery/download-spider-man-brand-new-day-2026/",
     "year": "2026",
+    "tmdbId": 969681,
+    "imdbId": "tt22084616",
+    "mediaType": "movie",
+    "rating": 8.5,
     "downloadLinks": [
       {
         "label": "1080p 10Bit HEVC [2.1GB] - G-Direct",
@@ -76,7 +83,7 @@ To avoid giant JSON files that cause latency and exceed memory/context limits, d
 ```
 
 ### 3. Live Homepage Feeds (`{source-slug}homepage.json`)
-Auto-updated snapshot of the latest 20 releases on page 1 of each source. Used to render instant homepages without scraping live sites:
+Auto-updated snapshot of the latest releases on page 1 of each source with direct download links and TMDB identifiers:
 - `vegamovieshomepage.json` (Hollywood)
 - `rogmovieshomepage.json` (Bollywood)
 - `xprimehubhomepage.json` (18+ Adult)
@@ -84,14 +91,18 @@ Auto-updated snapshot of the latest 20 releases on page 1 of each source. Used t
 ```json
 [
   {
-    "id": "download-love-of-your-life-2026",
-    "title": "Download Love of Your Life (2026) PrimeVideo : Dual Audio ...",
-    "poster": "https://image.tmdb.org/t/p/w500/dL3Tcv4FU2K85bgnGRBgLjFSrLr.jpg",
-    "sourceUrl": "https://vegamovies.gallery/download-love-of-your-life-2026/",
+    "id": "download-insidious-out-of-the-further-2026",
+    "title": "Download Insidious: Out of the Further (2026) WEB-DL Dual Audio ...",
+    "poster": "https://image.tmdb.org/t/p/w500/...",
+    "sourceUrl": "https://vegamovies.gallery/download-insidious-out-of-the-further-2026/",
     "chunk": 1,
     "year": "2026",
-    "quality": "1080p",
-    "updatedAt": "2026-10-14T18:00:00.000Z"
+    "tmdbId": 1291595,
+    "imdbId": "tt32393988",
+    "mediaType": "movie",
+    "rating": 7.7,
+    "downloadLinks": [ ... ],
+    "updatedAt": "2026-11-02T08:00:00.000Z"
   }
 ]
 ```

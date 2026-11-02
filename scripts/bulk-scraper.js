@@ -18,6 +18,18 @@ try {
     extractPostMetadata = serverParser.extractPostMetadata;
 }
 
+// Resolve TMDB Service
+let fetchTmdbMetadata;
+try {
+    const tmdbModule = await import('./tmdbService.js');
+    fetchTmdbMetadata = tmdbModule.fetchTmdbMetadata;
+} catch (e) {
+    try {
+        const tmdbModule = await import('../scripts/tmdbService.js');
+        fetchTmdbMetadata = tmdbModule.fetchTmdbMetadata;
+    } catch {}
+}
+
 /**
  * ============================================================================
  * BULK SCRAPER CONFIGURATION
@@ -143,8 +155,102 @@ function extractCleanPoster(imgEl) {
 }
 
 /**
- * Scrapes the latest posts from page 1 and auto-updates the {source-slug}homepage.json file
+ * Scrapes a single movie post page to extract fullTitle, poster, and downloadLinks
  */
+async function scrapeMoviePage(url) {
+    const cleanUrl = url.trim().replace(/([^:])\/\/+/g, '$1/');
+    const response = await axios.get(cleanUrl, {
+        headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+        },
+        timeout: 15000,
+        maxRedirects: 5
+    });
+
+    const $ = cheerio.load(response.data);
+    const fullTitle = $('h1').first().text().trim() || $('title').text().trim();
+    const categories = extractCategories($, fullTitle, cleanUrl);
+    const postMeta = extractPostMetadata($, fullTitle);
+
+    const downloadLinks = [];
+    const content = $('article').length ? $('article') : $('main').length ? $('main') : $('.entry-content').length ? $('.entry-content') : $('body');
+
+    content.find('a').each((i, el) => {
+        const linkUrl = $(el).attr('href');
+        if (!linkUrl || !linkUrl.startsWith('http') || linkUrl.includes('vegamovies-apk')) return;
+
+        const text = $(el).text().trim() || $(el).find('button').text().trim();
+        const hasBtn = $(el).find('button').length > 0;
+        const hasBtnClass = $(el).hasClass('btn') || $(el).hasClass('button') || $(el).hasClass('dwd-button') || $(el).hasClass('maxbutton');
+        const textLower = text.toLowerCase();
+        const isKnownLink = linkUrl.includes('nexdrive') || linkUrl.includes('vcloud') || linkUrl.includes('api.shareus.in') || linkUrl.includes('fastdl') || linkUrl.includes('hubcloud');
+        const isButtonText = textLower.includes('download') || textLower.includes('v-cloud') || textLower.includes('g-direct') || textLower.includes('batch') || textLower.includes('episode') || textLower.includes('instant');
+
+        if (isKnownLink || hasBtn || hasBtnClass || isButtonText) {
+            let combinedText = text;
+            let prev = $(el).parent().prev();
+            let steps = 0;
+            while (prev.length > 0 && steps < 6) {
+                const pText = prev.text().trim();
+                if (prev.is('h1, h2, h3, h4, h5, h6, p')) {
+                    if (pText.length > 5 && pText.length < 160) {
+                        combinedText = `${pText} - ${combinedText}`;
+                        break;
+                    }
+                }
+                prev = prev.prev();
+                steps++;
+            }
+
+            const parsed = parseLinkDetails(combinedText, linkUrl, {
+                season: postMeta.season,
+                primaryQuality: postMeta.primaryQuality
+            });
+
+            downloadLinks.push(parsed);
+        }
+    });
+
+    let pagePoster = $('meta[property="og:image"]').attr('content') ||
+                     $('meta[name="twitter:image"]').attr('content') ||
+                     extractCleanPoster($('img.wp-post-image')) ||
+                     extractCleanPoster($('.entry-content img').first()) ||
+                     extractCleanPoster($('article img').first());
+
+    if (pagePoster && (pagePoster.startsWith('data:') || pagePoster.includes(';base64,') || pagePoster.includes('.svg') || !pagePoster.startsWith('http'))) {
+        pagePoster = '';
+    }
+
+    // TMDB metadata enrichment
+    let tmdbData = null;
+    if (fetchTmdbMetadata) {
+        try {
+            tmdbData = await fetchTmdbMetadata(fullTitle, {
+                year: postMeta.year,
+                isSeries: postMeta.isSeries,
+                apiKey: namedArgs['tmdb-key'] || process.env.TMDB_API_KEY
+            });
+        } catch {}
+    }
+
+    if (tmdbData?.posterUrl && (!pagePoster || pagePoster.includes('blank'))) {
+        pagePoster = tmdbData.posterUrl;
+    }
+
+    return {
+        fullTitle,
+        poster: pagePoster,
+        categories,
+        postMeta,
+        downloadLinks,
+        ...(tmdbData?.tmdbId && { tmdbId: tmdbData.tmdbId }),
+        ...(tmdbData?.imdbId && { imdbId: tmdbData.imdbId }),
+        ...(tmdbData?.mediaType && { mediaType: tmdbData.mediaType }),
+        ...(tmdbData?.rating && { rating: tmdbData.rating }),
+        ...(tmdbData?.overview && { overview: tmdbData.overview })
+    };
+}
 async function updateHomepageJson(source, baseUrl, dataDir) {
     let category = 'hollywood';
     if (source === 'rogmovies' || source === 'bollywood') category = 'bollywood';
@@ -173,50 +279,132 @@ async function updateHomepageJson(source, baseUrl, dataDir) {
             } catch {}
         }
 
-        const homepagePosts = [];
-        $('article, .post-item, .poster-card, .post, [class*="poster-card"]').each((_, el) => {
-            let link = $(el).find('h2 a, h3 a, a').attr('href') || 
-                       $(el).find('meta[itemprop="url"]').attr('content') ||
-                       $(el).closest('a').attr('href') || 
-                       $(el).parent('a').attr('href');
-            let title = $(el).find('h2 a, h3 a, h2, h3, .post-title, .poster-title, .title').first().text().trim() ||
-                        $(el).find('img').attr('alt')?.trim();
-            let poster = extractCleanPoster($(el).find('img'));
+        const homepageRawItems = [];
+        const seenUrls = new Set();
 
-            if (title && link) {
-                const id = generateIdFromUrl(link);
+        $('article, .post-item, .poster-card, .post, [class*="post"], h2, h3').each((_, el) => {
+            let link = $(el).find('a').attr('href') || $(el).attr('href') || $(el).find('meta[itemprop="url"]').attr('content');
+            if (!link || !link.startsWith('http') || link.includes('/category/') || link.includes('/tag/') || link.includes('/page/') || seenUrls.has(link)) return;
+
+            let title = $(el).find('a').text().trim() || $(el).text().trim();
+            if (!title || title.length < 5 || title.includes('Vegamovies') || title.includes('Rogmovies')) return;
+
+            let imgEl = $(el).find('img').length ? $(el).find('img') : $(el).parent().find('img');
+            let poster = extractCleanPoster(imgEl);
+
+            seenUrls.add(link);
+            homepageRawItems.push({ title, link, poster });
+        });
+
+        console.log(`  ⚡ Fetching download links for ${homepageRawItems.length} homepage posts...`);
+        const homepagePosts = [];
+        let itemIndex = 0;
+        const workerConcurrency = 5;
+
+        const workers = Array.from({ length: Math.min(workerConcurrency, homepageRawItems.length) }, async () => {
+            while (itemIndex < homepageRawItems.length) {
+                const idx = itemIndex++;
+                const item = homepageRawItems[idx];
+                const id = generateIdFromUrl(item.link);
                 const matched = indexMap.get(id);
 
-                const yMatch = title.match(/\b(19\d{2}|20\d{2})\b/);
+                let downloadLinks = [];
+                let pageTitle = item.title;
+                let pagePoster = item.poster;
+
+                let postDetails = null;
+
+                // Check local chunk first if available
+                if (matched && matched.chunk) {
+                    const chunkFile = path.join(dataDir, category, `chunk-${matched.chunk}.json`);
+                    if (fs.existsSync(chunkFile)) {
+                        try {
+                            const chunkData = JSON.parse(fs.readFileSync(chunkFile, 'utf8'));
+                            if (chunkData[id] && chunkData[id].downloadLinks && chunkData[id].downloadLinks.length > 0) {
+                                downloadLinks = chunkData[id].downloadLinks;
+                                if (chunkData[id].fullTitle) pageTitle = chunkData[id].fullTitle;
+                                if (chunkData[id].poster) pagePoster = chunkData[id].poster;
+                                postDetails = chunkData[id];
+                            }
+                        } catch {}
+                    }
+                }
+
+                // If no local chunk links, scrape post page directly
+                if (downloadLinks.length === 0) {
+                    try {
+                        const details = await scrapeMoviePage(item.link);
+                        postDetails = details;
+                        downloadLinks = details.downloadLinks || [];
+                        if (details.fullTitle) pageTitle = details.fullTitle;
+                        if (details.poster) pagePoster = details.poster;
+                    } catch (e) {
+                        console.warn(`    ⚠️ Could not fetch details for ${id}:`, e.message);
+                    }
+                }
+
+                // If TMDB ID is not yet resolved, query TMDB
+                let tmdbId = postDetails?.tmdbId || matched?.tmdbId || null;
+                let imdbId = postDetails?.imdbId || null;
+                let mediaType = postDetails?.mediaType || null;
+                let rating = postDetails?.rating || null;
+
+                if (!tmdbId && fetchTmdbMetadata) {
+                    try {
+                        const tmdb = await fetchTmdbMetadata(pageTitle, {
+                            year: matched?.year,
+                            isSeries: matched?.isSeries,
+                            apiKey: namedArgs['tmdb-key'] || process.env.TMDB_API_KEY
+                        });
+                        if (tmdb) {
+                            tmdbId = tmdb.tmdbId;
+                            imdbId = tmdb.imdbId;
+                            mediaType = tmdb.mediaType;
+                            rating = tmdb.rating;
+                            if (tmdb.posterUrl && (!pagePoster || pagePoster.includes('blank'))) {
+                                pagePoster = tmdb.posterUrl;
+                            }
+                        }
+                    } catch {}
+                }
+
+                const yMatch = pageTitle.match(/\b(19\d{2}|20\d{2})\b/);
                 const year = matched?.year || (yMatch ? yMatch[1] : undefined);
 
                 let quality = matched?.quality;
                 if (!quality) {
-                    if (/\b(?:2160p|4k)\b/i.test(title)) quality = '4K UHD';
-                    else if (/\b1080p\b/i.test(title)) quality = '1080p';
-                    else if (/\b720p\b/i.test(title)) quality = '720p';
-                    else if (/\b480p\b/i.test(title)) quality = '480p';
+                    if (/\b(?:2160p|4k)\b/i.test(pageTitle)) quality = '4K UHD';
+                    else if (/\b1080p\b/i.test(pageTitle)) quality = '1080p';
+                    else if (/\b720p\b/i.test(pageTitle)) quality = '720p';
+                    else if (/\b480p\b/i.test(pageTitle)) quality = '480p';
                 }
 
                 homepagePosts.push({
                     id,
-                    title,
-                    poster: poster || matched?.poster || '',
-                    sourceUrl: link,
+                    title: pageTitle,
+                    poster: pagePoster || item.poster || matched?.poster || '',
+                    sourceUrl: item.link,
                     chunk: matched?.chunk || null,
                     ...(year && { year }),
                     ...(quality && { quality }),
                     ...(matched?.season && { season: matched.season }),
                     ...(matched?.isSeries && { isSeries: true }),
+                    ...(tmdbId && { tmdbId }),
+                    ...(imdbId && { imdbId }),
+                    ...(mediaType && { mediaType }),
+                    ...(rating && { rating }),
+                    downloadLinks,
                     updatedAt: new Date().toISOString()
                 });
             }
         });
 
+        await Promise.all(workers);
+
         if (homepagePosts.length > 0) {
             const fileName = `${source}homepage.json`;
             fs.writeFileSync(path.join(dataDir, fileName), JSON.stringify(homepagePosts, null, 2));
-            console.log(`✅ Successfully updated ${fileName} with ${homepagePosts.length} latest posts!`);
+            console.log(`✅ Successfully updated ${fileName} with ${homepagePosts.length} posts & direct download links!`);
         }
     } catch (err) {
         console.warn(`⚠️ Warning: Could not update ${source}homepage.json:`, err.message);
@@ -319,79 +507,7 @@ async function scrapeCategory({
         fs.writeFileSync(chunkFile, JSON.stringify(chunkData, null, 2));
     }
 
-    async function scrapeMoviePage(url) {
-        const cleanUrl = url.trim().replace(/([^:])\/\/+/g, '$1/');
-        const response = await axios.get(cleanUrl, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-            },
-            timeout: 15000,
-            maxRedirects: 5
-        });
 
-        const $ = cheerio.load(response.data);
-        const fullTitle = $('h1').first().text().trim() || $('title').text().trim();
-        const categories = extractCategories($, fullTitle, cleanUrl);
-        const postMeta = extractPostMetadata($, fullTitle);
-
-        const downloadLinks = [];
-        const content = $('article').length ? $('article') : $('main').length ? $('main') : $('.entry-content').length ? $('.entry-content') : $('body');
-
-        content.find('a').each((i, el) => {
-            const linkUrl = $(el).attr('href');
-            if (!linkUrl || !linkUrl.startsWith('http') || linkUrl.includes('vegamovies-apk')) return;
-
-            const text = $(el).text().trim() || $(el).find('button').text().trim();
-            const hasBtn = $(el).find('button').length > 0;
-            const hasBtnClass = $(el).hasClass('btn') || $(el).hasClass('button') || $(el).hasClass('dwd-button') || $(el).hasClass('maxbutton');
-            const textLower = text.toLowerCase();
-            const isKnownLink = linkUrl.includes('nexdrive') || linkUrl.includes('vcloud') || linkUrl.includes('api.shareus.in') || linkUrl.includes('fastdl') || linkUrl.includes('hubcloud');
-            const isButtonText = textLower.includes('download') || textLower.includes('v-cloud') || textLower.includes('g-direct') || textLower.includes('batch') || textLower.includes('episode') || textLower.includes('instant');
-
-            if (isKnownLink || hasBtn || hasBtnClass || isButtonText) {
-                let combinedText = text;
-                let prev = $(el).parent().prev();
-                let steps = 0;
-                while (prev.length > 0 && steps < 6) {
-                    const pText = prev.text().trim();
-                    if (prev.is('h1, h2, h3, h4, h5, h6, p')) {
-                        if (pText.length > 5 && pText.length < 160) {
-                            combinedText = `${pText} - ${combinedText}`;
-                            break;
-                        }
-                    }
-                    prev = prev.prev();
-                    steps++;
-                }
-
-                const parsed = parseLinkDetails(combinedText, linkUrl, {
-                    season: postMeta.season,
-                    primaryQuality: postMeta.primaryQuality
-                });
-
-                downloadLinks.push(parsed);
-            }
-        });
-
-        let pagePoster = $('meta[property="og:image"]').attr('content') ||
-                         $('meta[name="twitter:image"]').attr('content') ||
-                         extractCleanPoster($('img.wp-post-image')) ||
-                         extractCleanPoster($('.entry-content img').first()) ||
-                         extractCleanPoster($('article img').first());
-
-        if (pagePoster && (pagePoster.startsWith('data:') || pagePoster.includes(';base64,') || pagePoster.includes('.svg') || !pagePoster.startsWith('http'))) {
-            pagePoster = '';
-        }
-
-        return {
-            fullTitle,
-            poster: pagePoster,
-            categories,
-            postMeta,
-            downloadLinks
-        };
-    }
 
     console.log(`\n=================================================================`);
     console.log(`🎬 Target Category: ${CATEGORY.toUpperCase()} (${source})`);
@@ -492,7 +608,10 @@ async function scrapeCategory({
                                 id,
                                 title: movie.title,
                                 poster: finalPoster,
-                                chunk: targetChunk
+                                chunk: targetChunk,
+                                ...(details.tmdbId && { tmdbId: details.tmdbId }),
+                                ...(details.mediaType && { mediaType: details.mediaType }),
+                                ...(details.rating && { rating: details.rating })
                             };
                             if (details.postMeta?.primaryQuality) indexEntry.quality = details.postMeta.primaryQuality;
                             if (details.postMeta?.season) indexEntry.season = details.postMeta.season;
@@ -508,6 +627,11 @@ async function scrapeCategory({
                                 ...(details.postMeta?.isSeries && { isSeries: true }),
                                 ...(details.postMeta?.season && { season: details.postMeta.season }),
                                 ...(details.postMeta?.year && { year: details.postMeta.year }),
+                                ...(details.tmdbId && { tmdbId: details.tmdbId }),
+                                ...(details.imdbId && { imdbId: details.imdbId }),
+                                ...(details.mediaType && { mediaType: details.mediaType }),
+                                ...(details.rating && { rating: details.rating }),
+                                ...(details.overview && { overview: details.overview }),
                                 downloadLinks: details.downloadLinks
                             });
 
