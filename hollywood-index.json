@@ -124,7 +124,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 335536,
+    "mediaType": "tv",
+    "rating": 8.5
   },
   {
     "id": "download-the-trap-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -157,7 +160,10 @@
     "poster": "https://image.tmdb.org/t/p/original/tLbKMopp46m5i3hukmFkQdCzfDR.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "1992"
+    "year": "1992",
+    "tmdbId": 12251,
+    "mediaType": "movie",
+    "rating": 5.6
   },
   {
     "id": "download-crush-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -175,7 +181,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 79166,
+    "mediaType": "tv",
+    "rating": 7.8
   },
   {
     "id": "download-liar-game-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -225,7 +234,10 @@
     "poster": "https://image.tmdb.org/t/p/original/cyltXU1lAGhRFBuHQIMWBAPj8fI.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1236045,
+    "mediaType": "movie",
+    "rating": 7
   },
   {
     "id": "download-blue-box-season-1-2-hindi-dubbed-series-480p-720p-1080p-blu-ray",
@@ -252,7 +264,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 94664,
+    "mediaType": "tv",
+    "rating": 8.4
   },
   {
     "id": "download-as-a-reincarnated-aristocrat-season-1-3-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -261,7 +276,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 237150,
+    "mediaType": "tv",
+    "rating": 7.4
   },
   {
     "id": "download-wwe-money-in-the-bank-2026-wwe-special-show-480p-720p-1080p-web-dl",
@@ -287,7 +305,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 897589,
+    "mediaType": "movie",
+    "rating": 7
   },
   {
     "id": "download-overgeared-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -305,7 +326,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 312266,
+    "mediaType": "tv",
+    "rating": 7.2
   },
   {
     "id": "download-wwe-friday-night-smackdown-9th-october-2026-hindi-english-wwe-show",
@@ -321,7 +345,10 @@
     "poster": "https://image.tmdb.org/t/p/original/i2zztssCIbahGES1fdfWFmDXian.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2001"
+    "year": "2001",
+    "tmdbId": 10016,
+    "mediaType": "movie",
+    "rating": 5.2
   },
   {
     "id": "download-chip-in-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -365,7 +392,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 302051,
+    "mediaType": "tv",
+    "rating": 6.9
   },
   {
     "id": "download-that-time-i-got-reincarnated-as-a-slime-season-1-4-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -374,7 +404,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 82684,
+    "mediaType": "tv",
+    "rating": 8.4
   },
   {
     "id": "download-the-elusive-samurai-season-1-2-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -391,7 +424,10 @@
     "poster": "https://image.tmdb.org/t/p/original/mkHMNq0PUHDVn3w5QPM2hcnOdVb.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 294636,
+    "mediaType": "tv",
+    "rating": 7.4
   },
   {
     "id": "download-above-and-below-2026-hindi-dubbed-org-english",
@@ -399,14 +435,20 @@
     "poster": "https://image.tmdb.org/t/p/original/k3qzAyzDxc6UGjaoEdEKqQXPMSc.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1514682,
+    "mediaType": "movie",
+    "rating": 6
   },
   {
     "id": "download-apollo-has-fallen-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
     "title": "Download Apollo Has Fallen {S01E05 Added} Prime Video : Dual Audio {Hindi-English} 480p 720p & 1080p WEB-DL x264",
     "poster": "https://image.tmdb.org/t/p/original/gLaWotYDm8I9Wn3TWNqTGmy6uo9.jpg",
     "chunk": 1,
-    "quality": "1080p"
+    "quality": "1080p",
+    "tmdbId": 232018,
+    "mediaType": "tv",
+    "rating": 7
   },
   {
     "id": "download-carrie-2026-season-1-hindi-dubbed-org",
@@ -416,7 +458,10 @@
     "quality": "1080p",
     "season": 1,
     "year": "2026",
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 288673,
+    "mediaType": "tv",
+    "rating": 8.3
   },
   {
     "id": "download-the-exiled-heavy-knight-knows-how-to-game-the-system-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -425,7 +470,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 270603,
+    "mediaType": "tv",
+    "rating": 8.2
   },
   {
     "id": "download-the-ramparts-of-ice-season-1-2-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -443,7 +491,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 67178,
+    "mediaType": "tv",
+    "rating": 8.2
   },
   {
     "id": "download-netflix-below-2026-season-1",
@@ -461,7 +512,10 @@
     "poster": "https://image.tmdb.org/t/p/original/qg5U3trH8yEk94Iee9pFFxy8VzK.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1284046,
+    "mediaType": "movie",
+    "rating": 5.6
   },
   {
     "id": "download-love-game-in-eastern-fantasy-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -506,7 +560,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 75123,
+    "mediaType": "tv",
+    "rating": 8.1
   },
   {
     "id": "download-the-butchers-blade-2026-hindi-dubbed-org-chinese-480p-720p-1080p-blu-ray",
@@ -514,7 +571,10 @@
     "poster": "https://image.tmdb.org/t/p/original/og9NYoyrFji63IwsTdQP5bow0qE.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1609125,
+    "mediaType": "movie",
+    "rating": 6.6
   },
   {
     "id": "download-search-www-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -523,7 +583,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 89410,
+    "mediaType": "tv",
+    "rating": 8
   },
   {
     "id": "download-colombiana-2011-hindi-org-english-480p-720p-1080p-bluray",
@@ -531,7 +594,10 @@
     "poster": "https://image.tmdb.org/t/p/original/4yLzCjQkc49wDxq8J9DYq4O9sM.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2011"
+    "year": "2011",
+    "tmdbId": 62835,
+    "mediaType": "movie",
+    "rating": 6.7
   },
   {
     "id": "download-the-silent-planet-2024-hindi-dubbed-full-movie-480p-720p-1080p-web-dl",
@@ -539,7 +605,10 @@
     "poster": "https://image.tmdb.org/t/p/original/S7U5gPN9lx4Bybsjez2omvkQHH.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2024"
+    "year": "2024",
+    "tmdbId": 1146613,
+    "mediaType": "movie",
+    "rating": 5.3
   },
   {
     "id": "download-no-one-gets-out-alive-2021-hindi-org-english-480p-720p-1080p-bluray",
@@ -547,7 +616,10 @@
     "poster": "https://image.tmdb.org/t/p/original/bZUostLcCZYgcuBuAjmuSkBggiQ.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2021"
+    "year": "2021",
+    "tmdbId": 740925,
+    "mediaType": "movie",
+    "rating": 5.8
   },
   {
     "id": "download-four-hands-two-sonatas-season-1-english-dubbed-series-480p-720p-1080p-web-dl",
@@ -564,7 +636,10 @@
     "poster": "https://image.tmdb.org/t/p/original/ckKAdEz49bJ10jCLbCYIzVHJGEu.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1101412,
+    "mediaType": "movie",
+    "rating": 7.3
   },
   {
     "id": "download-wwe-monday-night-raw-5th-october-2026-hindi-english-wwe-show-480p-720p-1080p-web-dl-x264",
@@ -580,7 +655,10 @@
     "poster": "https://image.tmdb.org/t/p/original/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
     "chunk": 1,
     "quality": "4K UHD",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1291595,
+    "mediaType": "movie",
+    "rating": 7.7
   },
   {
     "id": "download-city-of-romance-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -597,7 +675,10 @@
     "poster": "https://image.tmdb.org/t/p/w500/kOCpkoMUVae9UIf85gO71SyjLbW.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2012"
+    "year": "2012",
+    "tmdbId": 72387,
+    "mediaType": "movie",
+    "rating": 6.5
   },
   {
     "id": "download-the-ark-season-3-english-with-subtitles-720p-1080p",
@@ -606,7 +687,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 47663,
+    "mediaType": "tv",
+    "rating": 6.5
   },
   {
     "id": "download-union-county-2026-english-full-movie-480p-720p-1080p-web-dl",
@@ -614,7 +698,10 @@
     "poster": "https://image.tmdb.org/t/p/original/1HW5lVwsuLo6CHW3i9Cm240jLL2.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1482938,
+    "mediaType": "movie",
+    "rating": 6.5
   },
   {
     "id": "download-captain-tsubasa-season-1-2-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -631,7 +718,10 @@
     "poster": "https://image.tmdb.org/t/p/original/ejI1ANa8nu2hYN7iVBWJfpaaJoe.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "1997"
+    "year": "1997",
+    "tmdbId": 25224,
+    "mediaType": "movie",
+    "rating": 5.3
   },
   {
     "id": "download-masterminds-2016-hindi-org-english-480p-720p-1080p-bluray",
@@ -639,7 +729,10 @@
     "poster": "https://image.tmdb.org/t/p/original/iLwmX4JCN6fAaIFdFq2g4CxH5co.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2016"
+    "year": "2016",
+    "tmdbId": 213681,
+    "mediaType": "movie",
+    "rating": 5.8
   },
   {
     "id": "download-lanterns-2026-season-1",
@@ -649,7 +742,10 @@
     "quality": "1080p",
     "season": 1,
     "year": "2026",
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 95350,
+    "mediaType": "tv",
+    "rating": 8.2
   },
   {
     "id": "download-stranglehold-2026-english-full-movie-480p-720p-1080p-web-dl",
@@ -657,7 +753,10 @@
     "poster": "https://image.tmdb.org/t/p/original/5DuNf0QwqyqqcZwPvhuEDKK10JE.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1320039,
+    "mediaType": "movie",
+    "rating": 6.2
   },
   {
     "id": "download-infirmary-2026-english-full-movie-480p-720p-1080p-web-dl",
@@ -665,7 +764,10 @@
     "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/bHiAp8WWHgfUrJmRnoiw4URYGcq.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1610703,
+    "mediaType": "movie",
+    "rating": 5.1
   },
   {
     "id": "download-the-mentalist-season-1-7-english-with-substitle-480p-720p-1080p-web-dl",
@@ -682,7 +784,10 @@
     "poster": "https://image.tmdb.org/t/p/original/gdllrWFb9ffvGkCDQAflrdnTaAg.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1542261,
+    "mediaType": "movie",
+    "rating": 6.9
   },
   {
     "id": "download-fury-in-the-shadows-2026-hindi-dubbed-org-chinese-480p-720p-1080p-web-dl",
@@ -690,7 +795,10 @@
     "poster": "https://image.tmdb.org/t/p/original/r6paIFC4hrvqPHf8ydQ2DkqD3Rn.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1615767,
+    "mediaType": "movie",
+    "rating": 7
   },
   {
     "id": "download-wwe-friday-night-smackdown-2nd-october-2026-wwe-show",
@@ -706,7 +814,10 @@
     "poster": "https://image.tmdb.org/t/p/original/lnnFFGhIXi6ZDU3r29eKHKTHdq0.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2000"
+    "year": "2000",
+    "tmdbId": 10385,
+    "mediaType": "movie",
+    "rating": 5.3
   },
   {
     "id": "download-doing-life-2026-hindi-dubbed-org-english-480p-720p-1080p-web-dl",
@@ -714,7 +825,10 @@
     "poster": "https://image.tmdb.org/t/p/original/5nZVjsCk5tWyyhLGt5U2TxsR85w.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1458857,
+    "mediaType": "movie",
+    "rating": 7.8
   },
   {
     "id": "download-i-would-rather-die-2026-season-1",
@@ -723,7 +837,10 @@
     "chunk": 1,
     "quality": "1080p",
     "year": "2026",
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 335227,
+    "mediaType": "tv",
+    "rating": 8.3
   },
   {
     "id": "download-red-queen-season-1-2-complete-hindi-dubbed-org-480p-720p-1080p-web-dl",
@@ -732,7 +849,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 203667,
+    "mediaType": "tv",
+    "rating": 7
   },
   {
     "id": "download-reply-1988-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
@@ -750,7 +870,10 @@
     "poster": "https://image.tmdb.org/t/p/original/cQwcaFe7rADsEDRDhS3TQTmfzLC.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2025"
+    "year": "2025",
+    "tmdbId": 1315702,
+    "mediaType": "movie",
+    "rating": 6.4
   },
   {
     "id": "download-clevatess-s01-02-hindi-dubbed-series-720p-1080p-web-dl",
@@ -776,7 +899,10 @@
     "poster": "https://image.tmdb.org/t/p/original/hkPxuAMEqIqo1HCtIi4sqx0GRuP.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1101383,
+    "mediaType": "movie",
+    "rating": 7.1
   },
   {
     "id": "download-ip-man-kung-fu-legend-2026-hindi-dubbed-org-chinese-480p-720p-1080p-web-dl",
@@ -784,7 +910,10 @@
     "poster": "https://image.tmdb.org/t/p/original/m3Low6jJrKXHSYFpXNkmYsG1Q6I.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1628071,
+    "mediaType": "movie",
+    "rating": 7
   },
   {
     "id": "ast-of-eden-2026-season-1",
@@ -794,7 +923,10 @@
     "quality": "1080p",
     "season": 1,
     "year": "2026",
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 258165,
+    "mediaType": "tv",
+    "rating": 8
   },
   {
     "id": "download-hacksaw-ridge-2016-hindi-dubbed-org-english-480p-720p-1080p-bluray",
@@ -802,7 +934,10 @@
     "poster": "https://image.tmdb.org/t/p/original/4adpLqb8Hxbpp5aHj6RrCDrhAc4.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2016"
+    "year": "2016",
+    "tmdbId": 324786,
+    "mediaType": "movie",
+    "rating": 8.2
   },
   {
     "id": "download-runner-2026-english-full-movie-480p-720p-1080p",
@@ -810,7 +945,10 @@
     "poster": "https://image.tmdb.org/t/p/original/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1377237,
+    "mediaType": "movie",
+    "rating": 8.3
   },
   {
     "id": "the-uprising",
@@ -818,7 +956,10 @@
     "poster": "https://image.tmdb.org/t/p/original/aR4BFgINEiTXF6GWlRI3GapFYTL.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 977942,
+    "mediaType": "movie",
+    "rating": 7.9
   },
   {
     "id": "the-widower-til-death-do-us-part",
@@ -826,7 +967,10 @@
     "poster": "https://image.tmdb.org/t/p/original/8MmN3JmgscGiAP3bUlrc2rLsGDq.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1758536,
+    "mediaType": "movie",
+    "rating": 6.8
   },
   {
     "id": "download-medusa",
@@ -835,7 +979,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 284792,
+    "mediaType": "tv",
+    "rating": 7.4
   },
   {
     "id": "download-hokum-2026-hindi-dubbed-full-movie-480p-720p-1080p-web-dl",
@@ -843,7 +990,10 @@
     "poster": "https://image.tmdb.org/t/p/original/x6rHcQFiYcczLQPrmxXPAicm54E.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1430077,
+    "mediaType": "movie",
+    "rating": 6.8
   },
   {
     "id": "mononoke-the-movie-chapter-iii-the-curse-of-the-serpent",
@@ -851,7 +1001,10 @@
     "poster": "https://image.tmdb.org/t/p/original/nANxmUdcF2cyBNjBMeG1LaXnw0n.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1322562,
+    "mediaType": "movie",
+    "rating": 8.5
   },
   {
     "id": "download-wwe-monday-night-raw-28th-september-2026-hindi-english-wwe-show-480p-720p-1080p-web-dl-x264",
@@ -867,7 +1020,10 @@
     "poster": "https://image.tmdb.org/t/p/original/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1377237,
+    "mediaType": "movie",
+    "rating": 8.3
   },
   {
     "id": "download-anora-2024-hindi-dubbed-org-english-480p-720p-1080p",
@@ -875,7 +1031,10 @@
     "poster": "https://image.tmdb.org/t/p/original/v8Pq2MwPXWDCg1MF3UxNlBCkgDA.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2024"
+    "year": "2024",
+    "tmdbId": 1064213,
+    "mediaType": "movie",
+    "rating": 7.1
   },
   {
     "id": "download-the-younger-generation-1929-hindi-dubbed-org-english-480p-720p-1080p-bluray",
@@ -883,7 +1042,10 @@
     "poster": "https://image.tmdb.org/t/p/original/bnSctRBY3JyARxMdmwjI77vGmPw.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "1929"
+    "year": "1929",
+    "tmdbId": 204643,
+    "mediaType": "movie",
+    "rating": 6.9
   },
   {
     "id": "download-toxic-skies-2008-hindi-org-english-480p-720p-bluray",
@@ -891,7 +1053,10 @@
     "poster": "https://image.tmdb.org/t/p/original/9QWTbgNrKeuPqBgOjRvyAhjY6Ol.jpg",
     "chunk": 2,
     "quality": "720p",
-    "year": "2008"
+    "year": "2008",
+    "tmdbId": 24917,
+    "mediaType": "movie",
+    "rating": 4.4
   },
   {
     "id": "download-heart-of-the-beast-2026-english",
@@ -899,7 +1064,10 @@
     "poster": "https://image.tmdb.org/t/p/original/QTD1kU8h6GSVKddL5XNLITylu1.jpg",
     "chunk": 2,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1263337,
+    "mediaType": "movie",
+    "rating": 7.3
   },
   {
     "id": "download-end-of-the-trail-1932-hindi-dubbed-org-english-480p-720p-1080p-web-dl",
@@ -907,7 +1075,10 @@
     "poster": "https://image.tmdb.org/t/p/original/a43lvg9K69LhTACKQwO7sW0Hlww.jpg",
     "chunk": 2,
     "quality": "1080p",
-    "year": "1932"
+    "year": "1932",
+    "tmdbId": 525393,
+    "mediaType": "movie",
+    "rating": 6.5
   },
   {
     "id": "download-demon-slayer-kimetsu-no-yaiba-infinity-castle-2025-hindi-dubbed-full-movie-480p-720p-1080p-web-dl",
@@ -915,7 +1086,10 @@
     "poster": "https://image.tmdb.org/t/p/original/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
     "chunk": 2,
     "quality": "1080p",
-    "year": "2025"
+    "year": "2025",
+    "tmdbId": 1311031,
+    "mediaType": "movie",
+    "rating": 8.8
   },
   {
     "id": "download-risque-2025-hindi-dubbed-org-english-480p-720p-1080p-amazon-web-dl",
@@ -931,7 +1105,10 @@
     "poster": "https://image.tmdb.org/t/p/original/zkt8ZiI5QAoTkogpa2dhzVxgTuS.jpg",
     "chunk": 2,
     "quality": "1080p",
-    "year": "2025"
+    "year": "2025",
+    "tmdbId": 1153714,
+    "mediaType": "movie",
+    "rating": 6.4
   },
   {
     "id": "download-sparks-of-tomorrow-season-1-hindi-dubbed-series-480p-720p-1080p-web-dl",
