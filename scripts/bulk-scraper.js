@@ -143,11 +143,25 @@ function extractCleanPoster(imgEl) {
             if (trimmed.startsWith('data:') || trimmed.includes(';base64,') || trimmed.includes('.svg') || trimmed.includes('blank.gif')) {
                 continue;
             }
-            if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
-                return trimmed;
+            let resolvedUrl = trimmed;
+            if (resolvedUrl.startsWith('//')) {
+                resolvedUrl = 'https:' + resolvedUrl;
             }
-            if (trimmed.startsWith('//')) {
-                return 'https:' + trimmed;
+            if (resolvedUrl.startsWith('http://') || resolvedUrl.startsWith('https://')) {
+                // If VegaMovies wraps a TMDB image in ?u=base64, unwrap it directly
+                if (resolvedUrl.includes('?u=') || resolvedUrl.includes('&u=')) {
+                    try {
+                        const parsed = new URL(resolvedUrl);
+                        const u = parsed.searchParams.get('u');
+                        if (u) {
+                            const decoded = Buffer.from(u, 'base64').toString('utf8');
+                            if (decoded.startsWith('http://') || decoded.startsWith('https://')) {
+                                return decoded;
+                            }
+                        }
+                    } catch {}
+                }
+                return resolvedUrl;
             }
         }
     }
@@ -220,6 +234,17 @@ async function scrapeMoviePage(url) {
 
     if (pagePoster && (pagePoster.startsWith('data:') || pagePoster.includes(';base64,') || pagePoster.includes('.svg') || !pagePoster.startsWith('http'))) {
         pagePoster = '';
+    } else if (pagePoster && (pagePoster.includes('?u=') || pagePoster.includes('&u='))) {
+        try {
+            const parsed = new URL(pagePoster);
+            const u = parsed.searchParams.get('u');
+            if (u) {
+                const decoded = Buffer.from(u, 'base64').toString('utf8');
+                if (decoded.startsWith('http://') || decoded.startsWith('https://')) {
+                    pagePoster = decoded;
+                }
+            }
+        } catch {}
     }
 
     // TMDB metadata enrichment
