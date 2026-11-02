@@ -259,7 +259,8 @@ async function scrapeMoviePage(url) {
         } catch {}
     }
 
-    if (tmdbData?.posterUrl && (!pagePoster || pagePoster.includes('blank'))) {
+    // Always prioritize official direct TMDB poster over site-hosted or compressed images
+    if (tmdbData?.posterUrl) {
         pagePoster = tmdbData.posterUrl;
     }
 
@@ -386,7 +387,7 @@ async function updateHomepageJson(source, baseUrl, dataDir) {
                             imdbId = tmdb.imdbId;
                             mediaType = tmdb.mediaType;
                             rating = tmdb.rating;
-                            if (tmdb.posterUrl && (!pagePoster || pagePoster.includes('blank'))) {
+                            if (tmdb.posterUrl) {
                                 pagePoster = tmdb.posterUrl;
                             }
                         }

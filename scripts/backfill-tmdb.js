@@ -104,6 +104,7 @@ async function backfillCategory(category) {
                     item.tmdbId = tmdb.tmdbId;
                     item.mediaType = tmdb.mediaType;
                     if (tmdb.rating) item.rating = tmdb.rating;
+                    if (tmdb.posterUrl) item.poster = tmdb.posterUrl;
                     matchedCount++;
                     indexModified = true;
 
@@ -116,6 +117,7 @@ async function backfillCategory(category) {
                             chunkData[item.id].mediaType = tmdb.mediaType;
                             if (tmdb.rating) chunkData[item.id].rating = tmdb.rating;
                             if (tmdb.overview) chunkData[item.id].overview = tmdb.overview;
+                            if (tmdb.posterUrl) chunkData[item.id].poster = tmdb.posterUrl;
                         }
                     }
 
