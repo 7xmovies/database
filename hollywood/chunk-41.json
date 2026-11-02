@@ -3423,6 +3423,11 @@
         "server": "NexDrive"
       }
     ],
-    "updatedAt": "2026-11-02T07:17:25.307Z"
+    "updatedAt": "2026-11-02T07:17:25.307Z",
+    "tmdbId": 33408,
+    "imdbId": "tt0106627",
+    "mediaType": "movie",
+    "rating": 6.7,
+    "overview": "A precocious and obsessive teenager develops a crush on a naive writer with harrowing consequences."
   }
 }

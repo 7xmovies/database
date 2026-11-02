@@ -34,22 +34,22 @@ export function cleanTitleForTmdb(rawTitle) {
         }
     }
 
-    // 4. Cut off OTT platform prefixes / channel labels
-    const ottKeywords = ['primevideo', 'netflix', 'disney\\+?', 'hotstar', 'jiocinema', 'sonyliv', 'zee5', 'apple\\s*tv'];
-    for (const ott of ottKeywords) {
-        const regex = new RegExp(`(?::|–|-|\\|)?\\s*\\b${ott}\\b.*$`, 'i');
-        title = title.replace(regex, ' ');
-    }
-
-    // 5. Remove content inside brackets, braces, and parentheses
+    // 4. Remove content inside brackets, braces, and parentheses
     title = title
         .replace(/\{[^}]*\}/g, ' ')
         .replace(/\[[^\]]*\]/g, ' ')
         .replace(/\([^)]*\)/g, ' ');
 
+    // 5. Cut off OTT platform prefixes / channel labels (including JioHotstar, Disney+ Hotstar, etc.)
+    const ottKeywords = ['prime\\s*video', 'primevideo', 'netflix', 'disney\\+?\\s*hotstar', 'disney\\+?', 'jio\\s*hotstar', 'jiohotstar', 'hotstar', 'jiocinema', 'jio\\s*cinema', 'sonyliv', 'sony\\s*liv', 'zee5', 'apple\\s*tv'];
+    for (const ott of ottKeywords) {
+        const regex = new RegExp(`(?::|–|-|\\|)?\\s*\\b${ott}\\b.*$`, 'i');
+        title = title.replace(regex, ' ');
+    }
+
     // 6. Remove technical qualities, audio descriptors, and noise words
     title = title
-        .replace(/\b(?:Dual\s*Audio|Multi\s*Audio|Hindi\s*Dubbed|Dubbed|ORG|Full\s*Movie|WEB-DL|BluRay|HDRip|WEBRip|HDTC|HDTV|Season\s*\d+|S\d+|Episode\s*\d+|E\d+|Series|Adult|Short\s*Film|TV-Show|Show)\b/gi, ' ')
+        .replace(/\b(?:Dual\s*Audio|Multi\s*Audio|Hindi\s*Dubbed|Dubbed|ORG|Full\s*Movie|WEB-DL|Blu[- ]?Ray|HDRip|WEBRip|BRRip|HDTC|HDTV|HD|Season\s*\d+|S\d+|Episode\s*\d+|E\d+|Series|Adult|Short\s*Film|TV-Show|Show)\b/gi, ' ')
         .replace(/\b(?:Hindi|English|Punjabi|Tamil|Telugu|Kannada|Malayalam|Bengali|Marathi|Gujarati|Bhojpuri|Urdu|Spanish|Korean|Chinese|Japanese)\b/gi, ' ')
         .replace(/\b(?:2160p|4k|1080p|720p|480p|360p|x264|x265|hevc|10bit|imax|sdr|hdr|60fps|proper)\b/gi, ' ')
         .replace(/\b(?:Added|Complete|Episodes?|All\s*Episodes)\b/gi, ' ')

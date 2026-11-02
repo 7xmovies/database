@@ -5,7 +5,10 @@
     "poster": "https://image.tmdb.org/t/p/original/4B0eHFjUYYZlkE1fthC29KVC4CS.jpg",
     "chunk": 41,
     "quality": "1080p",
-    "year": "1993"
+    "year": "1993",
+    "tmdbId": 33408,
+    "mediaType": "movie",
+    "rating": 6.7
   },
   {
     "id": "download-love-of-your-life-2026-hindi-dubbed-org-english-480p-720p-1080p-web-dl",
@@ -13,7 +16,10 @@
     "poster": "https://image.tmdb.org/t/p/original/dL3Tcv4FU2K85bgnGRBgLjFSrLr.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1381078,
+    "mediaType": "movie",
+    "rating": 6.8
   },
   {
     "id": "download-visionquest-2026-season-1-hindi-dubbed-org",
@@ -21,7 +27,10 @@
     "poster": "https://image.tmdb.org/t/p/original/hepJA9hlvKsFvmpWJ2Ds38YXecb.jpg",
     "chunk": 1,
     "quality": "4K UHD",
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 213375,
+    "mediaType": "tv",
+    "rating": 8.6
   },
   {
     "id": "download-weapons-2025-hindi-dubbed-full-movie-480p-720p-1080p-bluray",
@@ -29,7 +38,10 @@
     "poster": "https://vegamovies.gallery/wp-content/uploads/2025/09/Weapons.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2025"
+    "year": "2025",
+    "tmdbId": 1078605,
+    "mediaType": "movie",
+    "rating": 7.3
   },
   {
     "id": "download-marshals-2026-season-1-2-hindi-dubbed-org",
@@ -38,7 +50,10 @@
     "chunk": 1,
     "quality": "1080p",
     "season": 1,
-    "isSeries": true
+    "isSeries": true,
+    "tmdbId": 290856,
+    "mediaType": "tv",
+    "rating": 8
   },
   {
     "id": "download-hope-2026-full-movie",
@@ -46,7 +61,10 @@
     "poster": "https://image.tmdb.org/t/p/original/xcU2DzlAUJeFRkY67WZqaoGFSkL.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1058424,
+    "mediaType": "movie",
+    "rating": 6.8
   },
   {
     "id": "download-matchbox-the-movie-2026-full-movie",
@@ -54,7 +72,10 @@
     "poster": "https://image.tmdb.org/t/p/original/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 1148365,
+    "mediaType": "movie",
+    "rating": 7.6
   },
   {
     "id": "download-spider-man-brand-new-day-2026-hindi-dubbed-full-movie-480p-720p-1080p-2160p-web-dl",
@@ -62,7 +83,10 @@
     "poster": "https://image.tmdb.org/t/p/original/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
     "chunk": 1,
     "quality": "4K UHD",
-    "year": "2026"
+    "year": "2026",
+    "tmdbId": 969681,
+    "mediaType": "movie",
+    "rating": 8.5
   },
   {
     "id": "download-oliver-twist-1984-hindi-dubbed-org-english-480p-720p-1080p-bluray",
@@ -70,7 +94,10 @@
     "poster": "https://image.tmdb.org/t/p/original/wkMdDqXI58MuW99wi9kotC8kCVM.jpg",
     "chunk": 1,
     "quality": "1080p",
-    "year": "1984"
+    "year": "1984",
+    "tmdbId": 257,
+    "mediaType": "movie",
+    "rating": 6.8
   },
   {
     "id": "download-helluva-boss-season-1-3-hindi-dubbed-series-480p-720p-1080p-web-dl",

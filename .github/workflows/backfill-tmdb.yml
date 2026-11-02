@@ -1,0 +1,87 @@
+name: 🔄 Backfill TMDB IDs for Existing Database
+
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'Target Category to Backfill'
+        required: true
+        default: 'hollywood'
+        type: choice
+        options:
+          - 'hollywood'
+          - 'bollywood'
+          - 'all'
+      limit:
+        description: 'Maximum movies to process in this run (e.g. 500, 1000, 2000)'
+        required: false
+        default: '1000'
+      concurrency:
+        description: 'Worker concurrency (safe with TMDB rate limits: 3-5)'
+        required: false
+        default: '4'
+        type: choice
+        options:
+          - '3'
+          - '4'
+          - '5'
+      commit_changes:
+        description: 'Commit and push updated database files to main branch?'
+        required: true
+        default: true
+        type: boolean
+
+concurrency:
+  group: scraper-sync
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    name: Backfill TMDB Metadata
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout Database Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN || github.token }}
+
+      - name: Setup Node.js Runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Execute TMDB Backfill
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY || 'b18089699b30648f171528029de6292a' }}
+        run: |
+          ARGS="--category=${{ github.event.inputs.category }} --concurrency=${{ github.event.inputs.concurrency }} --data-dir=."
+          if [ -n "${{ github.event.inputs.limit }}" ] && [ "${{ github.event.inputs.limit }}" != "all" ]; then
+            ARGS="${ARGS} --limit=${{ github.event.inputs.limit }}"
+          fi
+
+          echo "Running: node scripts/backfill-tmdb.js ${ARGS}"
+          node scripts/backfill-tmdb.js ${ARGS}
+
+      - name: Commit and Push Database Updates
+        if: ${{ github.event.inputs.commit_changes != 'false' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --staged --quiet; then
+            echo "ℹ️ No changes detected. All selected movies already have TMDB IDs."
+          else
+            git commit -m "🤖 Backfill TMDB IDs for ${{ github.event.inputs.category }} movies"
+            git pull --rebase origin main || true
+            git push origin main
+            echo "✅ Successfully committed and pushed backfilled TMDB records!"
+          fi
